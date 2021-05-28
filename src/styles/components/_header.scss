@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+  background: $white;
+
+  @include mq("tablet", "min") {
+    padding: 30px 0;
+  }
+
+  @include mq("desktop", "min") {
+    padding: 0;
+
+    &.scroll {
+      box-shadow: rgba(5, 5, 24, 0.14) 0px 0px 50px 0px;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    svg {
+      width: 70px;
+    }
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 14px;
+
+        @include mq("tablet", "min") {
+          display: inline-block;
+          margin-left: 30px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $black;
+          transition: background 0.15s ease-in-out;
+
+          &:hover,
+          &.active {
+            background: rgba($green, 0.15);
+          }
+        }
+      }
+    }
+  }
+}

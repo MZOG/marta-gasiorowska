@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 2000px;
+  margin-top: 100px;
+}
+
+.container {
+  padding: 0 20px;
+
+  @include mq("tablet", "min") {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @include mq("desktop", "min") {
+    max-width: 1200px;
+  }
+}

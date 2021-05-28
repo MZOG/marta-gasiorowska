@@ -1,0 +1,18 @@
+.collab__boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.collab__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+
+  &.green {
+    background: $green;
+  }
+}
