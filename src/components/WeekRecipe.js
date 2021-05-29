@@ -1,6 +1,36 @@
 import * as React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import Img from "gatsby-image";
+
 
 const WeekRecipe = () => {
+  const data = useStaticQuery(graphql`
+  {
+    allDatoCmsRecipe(filter: {recipeOfTheWeek: {eq: false}}) {
+      edges {
+        node {
+          url
+          title
+          id
+          image {
+            fluid {
+              ...GatsbyDatoCmsFluid_tracedSVG
+              src
+            }
+          }
+          recipeOfTheWeek
+          recipeSteps
+        }
+      }
+    }
+  }
+`)
+
+console.log(data);
+console.log(data.allDatoCmsRecipe.edges[0].node.title)
+
+
+
   return (
           <div class="weekly_recipe">
     <div class="container">
@@ -8,23 +38,13 @@ const WeekRecipe = () => {
 
       <div class="row">
         <div class="col-md-4 weekly_recipe-photo">
-          <img
-            src="~/assets/images/1.jpg"
-            class="img-responsive"
-            width="100%"
-          />
+        <Img fluid={data.allDatoCmsRecipe.edges[0].node.image.fluid} className="card-img-top" alt={data.allDatoCmsRecipe.edges[0].node.title} />
         </div>
         <div class="col-md-8">
-          <h3>DANE Z DATOCMS</h3>
+          <h3>{data.allDatoCmsRecipe.edges[0].node.title}</h3>
           <h4>Opis przygotowania</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          {data.allDatoCmsRecipe.edges[0].node.recipeSteps}
           </p>
         </div>
       </div>

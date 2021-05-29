@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 import Boxes from "../components/CollabBoxes";
+import WeekRecipe from "../components/WeekRecipe";
 
 const IndexPage = () => {
   return (
@@ -29,6 +30,8 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
+
+      <WeekRecipe />
 
       <Boxes />
     </Layout>
