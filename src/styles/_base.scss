@@ -342,7 +342,6 @@ html {
 
 .diet_page {
   .slimming_header {
-    text-align: center;
     margin: 60px 0;
   }
   
@@ -406,7 +405,7 @@ html {
   }
   
   .active_header {
-    text-align: center;
+    text-align: left;
     margin: 50px 0;
   }
   
@@ -433,8 +432,13 @@ html {
   }
   
   .pragnant_header {
-    text-align: center;
     margin: 50px 0;
+  }
+
+  .pragnant_warning {
+    p {
+      margin-top: 25px;
+    }
   }
   
   .pragnant_diet_motto {
@@ -593,6 +597,101 @@ html {
         list-style: none;
         margin: 0;
         padding: 0;
+      }
+    }
+  }
+
+  //footer//
+
+  .container {
+    background: #30D5C8;
+    margin-bottom: 0;
+
+    .footer_left {
+      .footer_logo {
+        img {
+          margin-top: 40px;
+          width: 45px;
+        }
+        h4 {
+          margin: 0;
+        }
+        h6 {
+          font-size: 12px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 22px;
+        }
+    
+        @media screen and (max-width: 400px) {
+          p {
+            font-size: 16px;
+            } 
+        } 
+      }
+    }
+  
+    .footer_middle {
+      margin: 20px 0;
+      ul {
+        list-style: none;
+        text-decoration: none;
+        li {
+          padding: 5px;    
+          a {
+            color: black;
+                  
+          }
+        }
+      }
+    @media screen and (max-width: 767px) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        } 
+    }  
+    @media screen and (max-width: 500px) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        } 
+    } 
+    @media screen and (max-width: 340px) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        font-size: 9px;
+        } 
+    }
+    }
+  
+    .footer_right {	
+      .footer_right_header {
+        margin-top: 25px;
+        text-align: center;
+      }
+      a {
+        svg {
+          color: #000;
+          display: grid;
+          margin: 0 auto;
+          margin-bottom: 25px;
+          margin-top: 25px;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .footer_svg {
+        display: flex;
+        justify-content: space-evenly;
       }
     }
   }

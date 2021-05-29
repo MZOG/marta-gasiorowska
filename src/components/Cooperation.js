@@ -34,7 +34,7 @@ const Cooperation = () => {
       		</div>
     		</div>
     	<div className="col-md-12 progress_text">
-      	<h3>Dieta odpowiada za <span className="highlight">70%</span> sukcesu!<span>Regularne ćwiczenia to<span className="highlight orange">30%</span>.</span></h3>
+      	<h3>Dieta odpowiada za <span className="highlight">70%</span> sukcesu!<span>Regularne ćwiczenia to <span className="highlight orange">30%</span>.</span></h3>
     	</div>
     	<div className="progress">
       	<div

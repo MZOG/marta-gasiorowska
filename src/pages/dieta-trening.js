@@ -11,9 +11,8 @@ const PageTrening = () => {
       <SEO title="Dieta & Trening" />
       <div className="container diet_page">
       <div className="slimming">
-      <div className="col-md-12 slimming_image">
-        <img src={dietSlimm} alt="odchudzająca" className="img-fluid" />
-      </div>
+        <div className="row">
+      <div className="col-md-6">
       <div className="slimming_header">
         <h2>DIETA ODCHUDZAJĄCA</h2>
       </div>
@@ -36,6 +35,12 @@ const PageTrening = () => {
           czynnikiem do utraty wagi. Dodatkowa aktywność fizyczna ma usprawnić
           proces odchudzania.
         </p>
+      </div>
+      
+      </div>
+      <div className="col-md-6 slimming_image">
+        <img src={dietSlimm} alt="odchudzająca" className="img-fluid" />
+      </div>
       </div>
       <div className="col-md-12 progress_text">
         <h4>Dieta odpowiada za 70% sukcesu! Regularne ćwiczenia to 30%.</h4>
@@ -86,9 +91,11 @@ const PageTrening = () => {
       <button>SPRAWDŻ PRZEPISY!</button>
     </div>
     <div className="active">
-      <div className="col-md-12 active_image">
+      <div className="row">
+      <div className="col-md-6 active_image">
       <img src={dietActive} alt="odchudzająca" className="img-fluid" />
       </div>
+      <div className="col-md-6 active_content">
       <div className="active_header">
         <h2>DIETA DLA AKTYWNYCH FIZYCZNIE</h2>
       </div>
@@ -106,6 +113,8 @@ const PageTrening = () => {
           odpowiednia gramatura posiłków, stosowne ich pory i wartościowe
           produkty do szybkiej regeneracji!
         </p>
+      </div>
+      </div>
       </div>
       <div className="col-md-12 progress_text">
         <h4>Dieta odpowiada za 70% sukcesu! Regularne ćwiczenia to 30%.</h4>
@@ -143,9 +152,9 @@ const PageTrening = () => {
       <button>SPRAWDŻ PRZEPISY!</button>
     </div>
     <div className="pragnant">
-      <div className="col-md-12 pragnant_image">
-      <img src={dietPragnant} alt="dla kobiet w ciąży" className="img-fluid" />
-      </div>
+      <div className="row">
+      
+      <div className="col-md-6 pragnant_content">
       <div className="pragnant_header">
         <h2>DIETA DLA KOBIET W CIĄŻY I KARMIĄCYCH</h2>
       </div>
@@ -157,8 +166,16 @@ const PageTrening = () => {
           krwiobiegu matki. Z kolei żywienie noworodka jest związane ze
           substancjami znajdującymi się w mleku matki. Nieodpowiednie odżywianie
           w trakcie ciąży może negatywnie wpływać na jej rozwój, a także
-          spowodować wiele powikłań m.in.:
+          spowodować wiele powikłań.
         </p>
+        
+        </div>
+        </div>
+        <div className="col-md-6 pragnant_image">
+      <img src={dietPragnant} alt="dla kobiet w ciąży" className="img-fluid" />
+      </div>
+        <div className="col-md-12 pragnant_warning">
+        <p>Powikładnia mogące wystąpić przy złej diecie:</p>
         <ul>
           <li>poronienia</li>
           <li>poród przedwczesny</li>
@@ -179,6 +196,9 @@ const PageTrening = () => {
           odżywcze, witaminy i minerały.
         </p>
       </div>
+      </div>
+      
+      
       <div className="diet_motto">
         <h4>Zadbaj o siebie i swoje dziecko od samego początku.</h4>
         <h4>NAPISZ DO MNIE I OMÓWIMY SZCZEGÓŁY!</h4>
