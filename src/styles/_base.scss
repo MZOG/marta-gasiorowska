@@ -51,13 +51,19 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     animation: moveBox 4s infinite;
-   
+
     @keyframes moveBox {
-      0% { transform: rotate(0deg) translateX(0px) rotate(0deg); }
-      50%   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
-      100% { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+      0% {
+        transform: rotate(0deg) translateX(0px) rotate(0deg);
+      }
+      50% {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
+      }
+      100% {
+        transform: rotate(0deg) translateX(0px) rotate(0deg);
+      }
     }
 
     p {
@@ -74,7 +80,7 @@ html {
     margin: 50px 0 50px;
     text-align: center;
   }
-  
+
   .contact_type {
     h3 {
       margin-bottom: 35px;
@@ -85,22 +91,22 @@ html {
   .col-md-6 {
     button {
       margin: 0;
-      box-shadow: 0 12px 24px 0 rgba(35,69,182,0.24);
+      box-shadow: 0 12px 24px 0 rgba(35, 69, 182, 0.24);
       margin-top: 25px;
     }
   }
-  
+
   .col-md-2 {
-    display: inline;		
+    display: inline;
   }
-  
+
   .contact_svg {
     margin-bottom: 20px;
     svg {
-      fill: #FE8543;
+      fill: #fe8543;
       margin-right: 10px;
     }
-  
+
     span {
       color: black;
       font-weight: bold;
@@ -109,7 +115,7 @@ html {
 
   button {
     margin-top: 25px;
-    box-shadow: 0 12px 24px 0 rgba(35,69,182,0.24);
+    box-shadow: 0 12px 24px 0 rgba(35, 69, 182, 0.24);
   }
 }
 //cooperation component //
@@ -121,43 +127,43 @@ html {
     color: darken($green, 15%);
     text-align: center;
   }
-  
+
   h3 {
     margin: 60px 0 30px 0;
     font-weight: 600;
-  
+
     span {
       display: block;
     }
-  
+
     .highlight {
       display: inline-block;
       color: $green;
-  
+
       &.orange {
         color: orange;
       }
     }
   }
-  
+
   .progress {
     height: 40px;
     margin-bottom: 100px;
   }
-  
+
   svg {
     margin-bottom: 20px;
   }
-  
+
   .dietician {
     margin-top: 75px;
   }
-  
+
   .dietician-header {
     text-align: center;
     margin-bottom: 50px;
   }
-  
+
   .dietician-text {
     margin-bottom: 50px;
   }
@@ -170,16 +176,16 @@ html {
       width: 30%;
     }
   }
-  
+
   .progress_text {
     text-align: center;
     margin-bottom: 15px;
   }
-  
+
   .cooperation_content {
     text-align: center;
   }
-  
+
   .cooperation_content {
     h2 {
       margin-top: 75px;
@@ -188,31 +194,31 @@ html {
   }
   .box-container {
     text-align: center;
-  
+
     .box {
       padding: 40px;
       color: $white;
       border-radius: 0;
-  
+
       h4 {
         margin-bottom: 20px;
       }
-  
+
       &_one {
         background: #ffa554;
         border-radius: 0;
       }
-  
+
       &_two {
         background: #fe8543;
         border-radius: 0;
       }
-  
+
       &_three {
         background: #a7d433;
         border-radius: 0;
       }
-  
+
       &_four {
         background: #01b4bd;
       }
@@ -220,7 +226,7 @@ html {
         margin: 20px;
       }
     }
-  
+
     .box_header {
       h4 {
         margin-top: 40px;
@@ -232,7 +238,7 @@ html {
       font-weight: bold;
     }
   }
-  
+
   .row {
     margin-bottom: 30px;
   }
@@ -242,13 +248,13 @@ html {
 
 .offer_page {
   h1 {
-		text-align: center;
-		margin: 75px 0;
-	}
-	h2 {
-		text-align: center;
-		margin-bottom: 50px;
-	}
+    text-align: center;
+    margin: 75px 0;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
   .consultation_content {
     background: #e7e7e7;
     h1 {
@@ -261,57 +267,56 @@ html {
       border-bottom: 1px solid #888;
     }
   }
-  
+
   .consultation_left_box {
     margin-left: 10px;
     background: #f7f7f7;
     padding: 20px;
-  
   }
-  
+
   .consultation_price {
     h2 {
       margin-top: 25px;
     }
   }
-  
+
   .consultation_text {
     padding-top: 20px;
   }
-  
+
   .motivation_text {
     margin-top: 50px;
-    color: #A7D433;
+    color: #a7d433;
   }
-  
+
   .offer_header {
-    h2{
+    h2 {
       margin: 75px 0;
     }
   }
-  
+
   .offer_boxes {
     .offer_box_one {
-      background: #A7D433;
+      background: #a7d433;
     }
     .offer_box_two {
-      background: #FFA554;
+      background: #ffa554;
     }
     .offer_box_tree {
-      background: #FE8543;
+      background: #fe8543;
     }
     h2 {
       margin-bottom: 50px;
     }
   }
-  
+
   .offer_type_price {
     h4 {
       margin: 0;
       color: white;
     }
   }
-  
+
   .price {
     .price_number {
       font-size: 50px;
@@ -321,7 +326,7 @@ html {
       font-weight: bold;
     }
   }
-  
+
   .offer_list {
     font-size: 20px;
     margin-top: 50px;
@@ -329,12 +334,12 @@ html {
       font-weight: bold;
     }
   }
-  
+
   .diets_discription {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
-    margin-bottom: 75px; 
+    margin-bottom: 75px;
   }
 }
 
@@ -345,29 +350,28 @@ html {
     text-align: center;
     margin: 60px 0;
   }
-  
+
   .progress_text {
     margin-top: 75px;
     text-align: center;
   }
-  
+
   .diet_motto {
     margin-top: 50px;
     text-align: center;
   }
-  
+
   .box_one {
     color: white;
     background: #fe8543;
     text-align: center;
     border-radius: 50px;
-  
+
     p {
       margin: 20px;
     }
-  
   }
-  
+
   .box_two {
     color: white;
     background: #fe8543;
@@ -377,7 +381,7 @@ html {
       margin: 20px;
     }
   }
-  
+
   .button {
     button {
       margin-top: 30px;
@@ -400,21 +404,21 @@ html {
   .bg-warning {
     width: 30%;
   }
-  
+
   .active {
     margin-top: 75px;
   }
-  
+
   .active_header {
     text-align: center;
     margin: 50px 0;
   }
-  
+
   .active_diet_motto {
     margin-top: 50px;
     text-align: center;
   }
-  
+
   .active-button {
     button {
       border: none;
@@ -427,22 +431,22 @@ html {
       }
     }
   }
-  
+
   .pragnant {
     margin-top: 75px;
   }
-  
+
   .pragnant_header {
     text-align: center;
     margin: 50px 0;
   }
-  
+
   .pragnant_diet_motto {
     margin-top: 50px;
     text-align: center;
     margin-bottom: 100px;
   }
-  
+
   .pragnant_button {
     margin-top: 30px;
     button {
@@ -456,21 +460,21 @@ html {
       }
     }
   }
-  
+
   .training_title {
     h2 {
       margin: 40px;
       text-align: center;
     }
   }
-  
+
   .trening_type {
     h3 {
       text-align: center;
       color: #fe8543;
     }
   }
-  
+
   .training_discription {
     margin: 50px 0;
     text-align: center;
@@ -488,11 +492,11 @@ html {
       margin-bottom: 75px;
     }
   }
-  
+
   .about_photo {
     margin-top: 50px;
   }
-  
+
   .about_boxes {
     margin-top: 75px;
     .about_box {
@@ -502,34 +506,34 @@ html {
       }
     }
   }
-  
+
   .about_me {
     margin: 75px 0;
   }
-  
+
   .about_list {
     margin-bottom: 75px;
   }
-  
+
   .coocking_discription {
     margin: 75px 0;
   }
-  
+
   .sport_title {
     margin: 75px 0;
   }
-  
+
   .sport_discrtiption {
     margin: auto;
   }
-  
+
   .sport {
     margin-bottom: 75px;
     img {
       width: 100%;
     }
   }
-  
+
   .motivation_text {
     color: #a7d433;
     margin: 50px 0;
@@ -542,58 +546,56 @@ html {
 
 //Week Recipe//
 
+.weekly_recipe {
+  background: $greenLight;
+  padding: 70px 0;
 
-  .weekly_recipe {
-    background: $greenLight;
-    padding: 70px 0;
-  
-    h2 {
-      font-weight: 700;
-      text-align: center;
-      color: #95c125;
-      margin-bottom: 50px;
-    }
-  
-    h3 {
-      font-weight: 700;
-      color: rgb(98, 128, 24);
-    }
-  
-    h4 {
-      color: rgb(98, 128, 24);
-      font-size: 18px;
-    }
-  
-    p {
-      color: rgb(98, 128, 24);
-    }
-  
-    &-photo {
-      img {
-        border-radius: 15px;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0 4px 6px -2px rgba(0, 0, 0, 0.05);
-      }
-    }
-  
-    &-info {
-      background: rgb(194, 230, 106);
-      color: rgb(98, 128, 24);
-      padding: 30px;
-      margin-top: 50px;
+  h2 {
+    font-weight: 700;
+    text-align: center;
+    color: #95c125;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: rgb(98, 128, 24);
+  }
+
+  h4 {
+    color: rgb(98, 128, 24);
+    font-size: 18px;
+  }
+
+  p {
+    color: rgb(98, 128, 24);
+  }
+
+  &-photo {
+    img {
       border-radius: 15px;
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  
-      h5 {
-        font-weight: 600;
-      }
-  
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
     }
   }
 
+  &-info {
+    background: rgb(194, 230, 106);
+    color: rgb(98, 128, 24);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    h5 {
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

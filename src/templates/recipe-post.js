@@ -1,28 +1,27 @@
 /* disable eslint */
-import React from "react"
+import React from "react";
 import SEO from "../components/Seo";
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../components/Layout"
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import Layout from "../components/Layout";
 
-const RecipePost =  ({ data }) => {
+const RecipePost = ({ data }) => {
   const recipe = data.datoCmsRecipe;
-  console.log(recipe)
 
   return (
     <Layout>
       <SEO title={recipe.title} />
-        <div className="container">
+      <div className="container">
         {recipe.title}
         <Img fluid={recipe.image.fluid} />
         <div dangerouslySetInnerHTML={{ __html: recipe.recipeSteps }} />
-        </div>
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
-  query($url: String!) {
+  query ($url: String!) {
     datoCmsRecipe(url: { eq: $url }) {
       id
       title
@@ -38,6 +37,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default RecipePost;

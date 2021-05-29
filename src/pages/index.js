@@ -26,7 +26,6 @@ const IndexPage = () => {
         <FloatingBoxes />
       </div>
       <WeekRecipe />
-      
 
       <Boxes />
     </Layout>
