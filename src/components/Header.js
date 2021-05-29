@@ -53,6 +53,7 @@ export default function Header() {
     <header className={`header ${scroll === false ? "scroll" : ""}`}>
       <div className="container">
         <div className="header__logo">
+          <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fillRule="evenodd"
@@ -115,6 +116,7 @@ export default function Header() {
               ></path>
             </g>
           </svg>
+          </Link>
         </div>
 
         <nav className="header__nav">
