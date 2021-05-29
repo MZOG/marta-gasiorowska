@@ -1,9 +1,11 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Layoyt from "../components/Layout";
 
 const PageOffer = () => {
   return (
     <Layoyt>
+		<SEO title="Oferta" />	
       <div className="container offer_page">
       <div className="motivation_text">
 				<h2>"Sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień." - <i>Robert Collier</i></h2>

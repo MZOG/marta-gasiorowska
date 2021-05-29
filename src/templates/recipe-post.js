@@ -1,5 +1,6 @@
 /* disable eslint */
 import React from "react"
+import SEO from "../components/Seo";
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/Layout"
@@ -10,6 +11,7 @@ const RecipePost =  ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={recipe.title} />
         <div className="container">
         {recipe.title}
         <Img fluid={recipe.image.fluid} />

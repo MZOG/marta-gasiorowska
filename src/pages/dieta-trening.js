@@ -1,4 +1,5 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Layoyt from "../components/Layout";
 import dietSlimm from '../images/odchudzająca2.jpg';
 import dietActive from '../images/active.jpg';
@@ -7,6 +8,7 @@ import dietPragnant from '../images/pragnant.jpg';
 const PageTrening = () => {
   return (
     <Layoyt>
+      <SEO title="Dieta & Trening" />
       <div className="container diet_page">
       <div className="slimming">
       <div className="col-md-12 slimming_image">

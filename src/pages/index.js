@@ -1,12 +1,15 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 import Boxes from "../components/CollabBoxes";
 import WeekRecipe from "../components/WeekRecipe";
+import FloatingBoxes from "../components/FloatingBoxes";
 
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO />
       <Carousel fullWidth>
         <p>elo</p>
       </Carousel>
@@ -19,19 +22,11 @@ const IndexPage = () => {
           że jest specjalistą interdyscyplinarnym, bo posiada wiedzę także z
           zakresu anatomii, biochemii, medycyny i psychologii.{" "}
         </p>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            elo
-          </div>
-          <div className="col-md-6">
-            elo
-          </div>
-        </div>
-      </div>
 
+        <FloatingBoxes />
+      </div>
       <WeekRecipe />
+      
 
       <Boxes />
     </Layout>
