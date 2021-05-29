@@ -1,4 +1,5 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Layout from "../components/Layout";
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
@@ -31,6 +32,7 @@ const PageRecipes = () => {
 
   return (
     <Layout>
+      <SEO title="Przepisy" />
       <div className="container">
       <p>Przepisy</p>
       <div className="row allRecipes">

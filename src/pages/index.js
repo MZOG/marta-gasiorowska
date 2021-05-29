@@ -1,4 +1,5 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 import Boxes from "../components/CollabBoxes";
@@ -7,6 +8,7 @@ import WeekRecipe from "../components/WeekRecipe";
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO />
       <Carousel fullWidth>
         <p>elo</p>
       </Carousel>

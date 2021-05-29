@@ -1,4 +1,5 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Layoyt from "../components/Layout";
 import Profile from '../images/profilowe.jpg';
 import I from '../images/ja.jpg';
@@ -11,6 +12,7 @@ import WeekRecipe from "../components/WeekRecipe";
 const PageAbout = () => {
   return (
     <Layoyt>
+      <SEO title="O mnie" />
       <div className="container about_page">
       <div className="row">
       <div className="col-md-6 about_photo">

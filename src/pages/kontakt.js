@@ -1,10 +1,12 @@
 import * as React from "react";
+import SEO from "../components/Seo";
 import Cooperation from "../components/Cooperation";
 import Layout from "../components/Layout";
 
 const PageKontakt = () => {
   return (
     <Layout>
+      <SEO title="Kontakt" />
       <div className="container default_page">
         <div className="contact_header">
 				  <h2>SKONTAKTUJ SIĘ ZE MNĄ!</h2>
