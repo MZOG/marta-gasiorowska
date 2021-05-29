@@ -36,8 +36,8 @@ export default function Header() {
       path: "/przepisy",
     },
     {
-      title: "Trening",
-      path: "/trening",
+      title: "Dieta i Trening",
+      path: "/dieta-trening",
     },
     {
       title: "Oferta",
