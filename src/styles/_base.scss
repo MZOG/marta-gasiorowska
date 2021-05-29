@@ -53,7 +53,7 @@ html {
   .contact_svg {
     margin-bottom: 20px;
     svg {
-      fill: #FE8543;
+      fill: $basicOrange;
       margin-right: 10px;
     }
   
@@ -160,7 +160,7 @@ html {
       }
   
       &_two {
-        background: #fe8543;
+        background: $basicOrange;
         border-radius: 0;
       }
   
@@ -254,7 +254,7 @@ html {
       background: #FFA554;
     }
     .offer_box_tree {
-      background: #FE8543;
+      background: $basicOrange;
     }
     h2 {
       margin-bottom: 50px;
@@ -314,7 +314,7 @@ html {
   
   .box_one {
     color: white;
-    background: #fe8543;
+    background: $basicOrange;
     text-align: center;
     border-radius: 50px;
   
@@ -326,7 +326,7 @@ html {
   
   .box_two {
     color: white;
-    background: #fe8543;
+    background: $basicOrange;
     text-align: center;
     border-radius: 50px;
     p {
@@ -343,7 +343,7 @@ html {
       border-radius: 25px;
       font-weight: bold;
       &:hover {
-        background: #fe8543;
+        background: $basicOrange;
         color: white;
       }
     }
@@ -378,7 +378,7 @@ html {
       border-radius: 25px;
       font-weight: bold;
       &:hover {
-        background: #fe8543;
+        background: $basicOrange;
         color: white;
       }
     }
@@ -407,7 +407,7 @@ html {
       border-radius: 25px;
       font-weight: bold;
       &:hover {
-        background: #fe8543;
+        background: $basicOrange;
         color: white;
       }
     }
@@ -423,7 +423,7 @@ html {
   .trening_type {
     h3 {
       text-align: center;
-      color: #fe8543;
+      color: $basicOrange;
     }
   }
   
@@ -487,7 +487,7 @@ html {
   }
   
   .motivation_text {
-    color: #a7d433;
+    color: $basicGreen;
     margin: 50px 0;
     text-align: center;
     .motivation_autor {
@@ -506,7 +506,7 @@ html {
     h2 {
       font-weight: 700;
       text-align: center;
-      color: #95c125;
+      color: $neonGreen;
       margin-bottom: 50px;
     }
   
