@@ -1,5 +1,8 @@
 import * as React from "react";
 import Layoyt from "../components/Layout";
+import dietSlimm from '../images/odchudzająca2.jpg';
+import dietActive from '../images/active.jpg';
+import dietPragnant from '../images/pragnant.jpg';
 
 const PageTrening = () => {
   return (
@@ -7,7 +10,7 @@ const PageTrening = () => {
       <div className="container diet_page">
       <div className="slimming">
       <div className="col-md-12 slimming_image">
-        <img src="~/src/images/odchudzająca2.jpg" className="img-fluid" />
+        <img src={dietSlimm} alt="odchudzająca" className="img-fluid" />
       </div>
       <div className="slimming_header">
         <h2>DIETA ODCHUDZAJĄCA</h2>
@@ -82,7 +85,7 @@ const PageTrening = () => {
     </div>
     <div className="active">
       <div className="col-md-12 active_image">
-        <img src="~/assets/images/active.jpg" className="img-fluid" />
+      <img src={dietActive} alt="odchudzająca" className="img-fluid" />
       </div>
       <div className="active_header">
         <h2>DIETA DLA AKTYWNYCH FIZYCZNIE</h2>
@@ -139,7 +142,7 @@ const PageTrening = () => {
     </div>
     <div className="pragnant">
       <div className="col-md-12 pragnant_image">
-        <img src="~/src/images/pragnant.jpg" className="img-fluid" />
+      <img src={dietPragnant} alt="dla kobiet w ciąży" className="img-fluid" />
       </div>
       <div className="pragnant_header">
         <h2>DIETA DLA KOBIET W CIĄŻY I KARMIĄCYCH</h2>
@@ -183,7 +186,7 @@ const PageTrening = () => {
       <button>SPRAWDŻ PRZEPISY!</button>
     </div>
     <div className="training_title">
-      <h2>Treningi</h2>
+      <h2>TRENINGI</h2>
     </div>
     <div className="row">
       <div className="col-md-6">
