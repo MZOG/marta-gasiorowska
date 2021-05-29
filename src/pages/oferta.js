@@ -4,7 +4,9 @@ import Layoyt from "../components/Layout";
 const PageOffer = () => {
   return (
     <Layoyt>
-      <p>Oferta</p>
+      <div className="container default_page">
+        <p>Oferta</p>
+      </div>
     </Layoyt>
   );
 };
