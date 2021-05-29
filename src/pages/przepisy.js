@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layoyt from "../components/Layout";
+import Layout from "../components/Layout";
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -30,7 +30,7 @@ const PageRecipes = () => {
 
 
   return (
-    <Layoyt>
+    <Layout>
       <div className="container">
       <p>Przepisy</p>
       <div className="row allRecipes">
@@ -41,7 +41,7 @@ const PageRecipes = () => {
             <div className="card-body">
               <h5 className="card-title">{recipe.node.title}</h5>
               <p class="card-text">{recipe.node.seo.description}</p>
-              <a href={`/przepisy/${recipe.node.url}`} className="btn btn-primary">Zobacz przepis</a>
+              <Link to={`/przepisy/${recipe.node.url}`} className="btn btn-primary">Zobacz przepis</Link>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const PageRecipes = () => {
       </div>
       
       </div>
-    </Layoyt>
+    </Layout>
   );
 };
 

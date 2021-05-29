@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/Layout"
 
-export default ({ data }) => {
+const RecipePost =  ({ data }) => {
   const recipe = data.datoCmsRecipe;
   console.log(recipe)
 
@@ -37,3 +37,5 @@ export const query = graphql`
     }
   }
 `
+
+export default RecipePost;
