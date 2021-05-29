@@ -19,6 +19,17 @@ const IndexPage = () => {
           zakresu anatomii, biochemii, medycyny i psychologii.{" "}
         </p>
       </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            elo
+          </div>
+          <div className="col-md-6">
+            elo
+          </div>
+        </div>
+      </div>
+
       <Boxes />
     </Layout>
   );
