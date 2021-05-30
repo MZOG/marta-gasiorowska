@@ -175,7 +175,7 @@ const PageTrening = () => {
       <img src={dietPragnant} alt="dla kobiet w ciąży" className="img-fluid" />
       </div>
         <div className="col-md-12 pragnant_warning">
-        <p>Powikładnia mogące wystąpić przy złej diecie:</p>
+        <p>Powikłania mogące wystąpić przy złej diecie:</p>
         <ul>
           <li>poronienia</li>
           <li>poród przedwczesny</li>

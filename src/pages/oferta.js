@@ -1,6 +1,7 @@
 import * as React from "react";
 import SEO from "../components/Seo";
 import Layoyt from "../components/Layout";
+import FloatingBoxes from "../components/FloatingBoxes";
 
 const PageOffer = () => {
   return (
@@ -12,7 +13,7 @@ const PageOffer = () => {
 			</div>
 		<div className="offer_schame">
 			<h1>Zdobądź upragnioną sylwetkę i zdrowe nawyki żywieniowe</h1>
-			<p>tu pojdzie schemacik</p>
+			<FloatingBoxes />
 		</div>
 		<div className="offer_header">
 			<h2>Indywidualna konsultacja</h2>
@@ -206,7 +207,7 @@ const PageOffer = () => {
 					</div>
 					<div className="diets_discription">
 						<p>UWAGA!</p>
-						<p>Indzwidualne dopasowanie diety na 7 dni (szczegóły diety ustalimy podczas wstępnego wywiadu dietetycznego</p>
+						<p>Indzwidualne dopasowanie diety na 7 dni (szczegóły diety ustalimy podczas wstępnego wywiadu dietetycznego)</p>
 					</div>
 				</div>
 			</div>

@@ -117,8 +117,10 @@ export default function Header() {
             </g>
           </svg>
           </Link>
+          <div className="logo_text_header">
+                <h4>Marta Gąsiorowska</h4>
+            </div>
         </div>
-
         <nav className="header__nav">
           <ul>
             {navigationLinks.map((link) => (

@@ -14,6 +14,12 @@ const PageAbout = () => {
     <Layoyt>
       <SEO title="O mnie" />
       <div className="container about_page">
+      <div className="col-md-12 motivation_text">
+        <h3>
+          „Nienawidziłem każdej minuty treningu, ale powtarzałem sobie: nie pododawaj się, przecierp teraz i żyj resztę życia jako mistrz.”
+        </h3>
+        <h3 className="motivation_autor"><i>Muhammad Ali</i></h3>
+      </div>
       <div className="row">
       <div className="col-md-6 about_photo">
       <img src={Profile} alt="zdjęcie profilowe" className="img-fluid" />
@@ -37,6 +43,78 @@ const PageAbout = () => {
         tych osób, znalazły się też takie podobne do mnie tzn. odkryły
         zamiłowanie do gotowania. Chciałabym, pokrótce opowiedzieć Ci o sobie.
       </p>
+    </div>
+    <div className="col-md-12 about_header">
+      <h3>Moje kwalifikacje</h3>
+    </div>
+    <div className="row">
+      <div className="col-md-7 about_list">
+        <h5>Dietetyka:</h5>
+        <h6>2021r.</h6>
+        <ul>
+          <li>Dietetyka ogólna</li>
+          <li>Dietetyka sportowa</li>
+          <li>Certyfikat "Dieta matki krmiącej piersią. Fakty i mity"</li>
+          <li>
+            Certyfikat "Rozszerzanie diety niemowląt. Praktyczny punkt widzenia"
+          </li>
+          <li>Certyfikat "Żywienie okołotreningowe"</li>
+          <li>Certyfikat "Podstawy suplementacji w sporcie"</li>
+          <li>Certyfikat "Dieta ketogeniczna od podstaw"</li>
+        </ul>
+        <h6>2020r.</h6>
+        <ul>
+          <li>Podstawa psychodietetyki</li>
+          <li>Rola witamin oraz mikro i makroelementów w życiu człowieka</li>
+          <li>Suplementacja w sporcie i żywieniu</li>
+        </ul>
+      </div>
+      <div className="col-md-4">
+        <h5>Trener Personalny:</h5>
+        <h6>2020r.</h6>
+        <ul>
+          <li>Trener personalny</li>
+        </ul>
+      </div>
+    </div>
+    <div className="col-md-12 about_boxes">
+      <div className="row">
+        <div className="col-md-6 about_box_one">
+              <h2>
+                <span>DIETETYK</span>
+              </h2>
+            <div className="wpb_wrapper">
+              <p>
+                • Układam plany żywienia w odchudzaniu.<br />
+                • Opracowuje jadłospisy dla osób aktywnych fizycznie.<br />
+                • Rozplanowuje diety w konkretnych jednostkach chorobowych tj.
+                otyłość, nadciśnienie tętnicze, wrzody żołądka i dwunastnicy.<br />
+                • Pomagam zwiększyć motywację w utrzymywaniu diety oraz uczę
+                zmieniać złe nawyki żywieniowe na dobre.
+              </p>
+            </div>
+        </div>
+        <div className="col-md-6 about_box_two">
+
+            <div className="wpb_wrapper">
+              <h2>
+                <span>TRENER PERSONALNY</span>
+              </h2>
+          </div>
+          <div
+            className="wpb_text_column wpb_content_element vc_custom_1599812677788"
+          >
+            <div className="wpb_wrapper">
+              <p>
+                • Przygotowuje odowiednie plany treningowe dopasowane do Twoich
+                celów i potrzeb.<br />
+                • Przekazuje wiedzę na temat prawidłowego podejścia do
+                aktywności fizycznej!.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div className="row">
       <div className="col-md-2"></div>
@@ -119,87 +197,6 @@ const PageAbout = () => {
       </div>
       <div className="col-md-4 ninja">
       <img src={Ninja} alt="moje zdjęcie" className="img-fluid" />
-      </div>
-    </div>
-    <div className="col-md-12 about_boxes">
-      <div className="row about_row">
-        <div className="col-md-12 about_box">
-          <div className="wpb_text_column wpb_content_element">
-            <div className="wpb_wrapper">
-              <h2>
-                <span>DIETETYK</span>
-              </h2>
-            </div>
-          </div>
-          <div
-            className="wpb_text_column wpb_content_element vc_custom_1591025000095"
-          >
-            <div className="wpb_wrapper">
-              <p>
-                • Układam plany żywienia w odchudzaniu.<br />
-                • Opracowuje jadłospisy dla osób aktywnych fizycznie.<br />
-                • Rozplanowuje diety w konkretnych jednostkach chorobowych tj.
-                otyłość, nadciśnienie tętnicze, wrzody żołądka i dwunastnicy.<br />
-                • Pomagam zwiększyć motywację w utrzymywaniu diety oraz uczę
-                zmieniać złe nawyki żywieniowe na dobre.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-12 about_box">
-          <div className="wpb_text_column wpb_content_element">
-            <div className="wpb_wrapper">
-              <h2>
-                <span>TRENER PERSONALNY</span>
-              </h2>
-            </div>
-          </div>
-          <div
-            className="wpb_text_column wpb_content_element vc_custom_1599812677788"
-          >
-            <div className="wpb_wrapper">
-              <p>
-                • Przygotowuje odowiednie plany treningowe dopasowane do Twoich
-                celów i potrzeb.<br />
-                • Przekazuje wiedzę na temat prawidłowego podejścia do
-                aktywności fizycznej!.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="col-md-12 about_header">
-      <h3>Moje kwalifikacje</h3>
-    </div>
-    <div className="row">
-      <div className="col-md-7 about_list">
-        <h5>Dietetyka:</h5>
-        <h6>2021r.</h6>
-        <ul>
-          <li>Dietetyka ogólna</li>
-          <li>Dietetyka sportowa</li>
-          <li>Certyfikat "Dieta matki krmiącej piersią. Fakty i mity"</li>
-          <li>
-            Certyfikat "Rozszerzanie diety niemowląt. Praktyczny punkt widzenia"
-          </li>
-          <li>Certyfikat "Żywienie okołotreningowe"</li>
-          <li>Certyfikat "Podstawy suplementacji w sporcie"</li>
-          <li>Certyfikat "Dieta ketogeniczna od podstaw"</li>
-        </ul>
-        <h6>2020r.</h6>
-        <ul>
-          <li>Podstawa psychodietetyki</li>
-          <li>Rola witamin oraz mikro i makroelementów w życiu człowieka</li>
-          <li>Suplementacja w sporcie i żywieniu</li>
-        </ul>
-      </div>
-      <div className="col-md-4">
-        <h5>Trener Personalny:</h5>
-        <h6>2020r.</h6>
-        <ul>
-          <li>Trener personalny</li>
-        </ul>
       </div>
     </div>
       </div>
