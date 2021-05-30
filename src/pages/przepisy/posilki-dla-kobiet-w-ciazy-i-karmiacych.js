@@ -2,7 +2,7 @@ import * as React from "react";
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import SingleRecipe from "../../components/SingleRecipe";
 
 const PregnentRecipes = () => {
   const data = useStaticQuery(graphql`
@@ -52,26 +52,14 @@ const PregnentRecipes = () => {
         <div className="row allRecipes">
           {data.allDatoCmsRecipe.edges.map((recipe) => (
             <div className="col-md-4">
-              <div className="card">
-                <Img
-                  fluid={recipe.node.image.fluid}
-                  className="card-img-top"
-                  alt={recipe.node.title}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{recipe.node.title}</h5>
-                  <p class="card-text">{recipe.node.seo.description}</p>
-                  <p>
-                    Kategoria: <strong>{recipe.node.category.name}</strong>
-                  </p>
-                  <Link
-                    to={`/przepisy/${recipe.node.category.url}/${recipe.node.url}`}
-                    className="btn btn-primary"
-                  >
-                    Zobacz przepis
-                  </Link>
-                </div>
-              </div>
+              <SingleRecipe
+                name={recipe.node.name}
+                image={recipe.node.image.fluid}
+                description={recipe.node.seo.description}
+                categoryName={recipe.node.category.name}
+                categoryUrl={recipe.node.category.url}
+                url={recipe.node.url}
+              />
             </div>
           ))}
         </div>
