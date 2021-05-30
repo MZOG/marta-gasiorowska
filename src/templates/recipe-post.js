@@ -8,13 +8,40 @@ import Layout from "../components/Layout";
 const RecipePost = ({ data }) => {
   const recipe = data.datoCmsRecipe;
 
+  console.log(recipe);
+
   return (
     <Layout>
       <SEO title={recipe.title} />
-      <div className="container">
-        {recipe.title}
-        <Img fluid={recipe.image.fluid} />
-        <div dangerouslySetInnerHTML={{ __html: recipe.recipeSteps }} />
+      <div className="container single_recipe">
+        <div className="row">
+          <div className="col-md-6">
+            <h1>{recipe.title}</h1>
+            <p>Kategoria:</p>
+            <div
+              dangerouslySetInnerHTML={{ __html: recipe.recipeSteps }}
+              className="single_recipe_steps"
+            />
+            <div className="single_recipe__calories">
+              <h2>Wartości odżywcze</h2>
+              <p>
+                Kalorie: <strong>{recipe.calories} kcal</strong>
+              </p>
+              <p>
+                Białko: <strong>{recipe.protein}</strong>
+              </p>
+              <p>
+                Węglowodany: <strong>{recipe.carbohydrates}</strong>
+              </p>
+              <p>
+                Tłuszcze: <strong>{recipe.fats}</strong>
+              </p>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <Img fluid={recipe.image.fluid} className="single_recipe-image" />
+          </div>
+        </div>
       </div>
     </Layout>
   );
@@ -26,6 +53,10 @@ export const query = graphql`
       id
       title
       recipeSteps
+      fats
+      calories
+      carbohydrates
+      protein
       image {
         fluid {
           ...GatsbyDatoCmsFluid_tracedSVG
