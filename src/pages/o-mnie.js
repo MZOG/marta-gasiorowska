@@ -1,12 +1,12 @@
 import * as React from "react";
 import SEO from "../components/Seo";
 import Layoyt from "../components/Layout";
-import Profile from '../images/profilowe.jpg';
-import I from '../images/ja.jpg';
-import Line from '../images/lina.jpg';
-import Water from '../images/woda.jpg';
-import Ninja from '../images/ninja.jpg';
-import Windsurfing from '../images/windsurfing.jpg';
+import Profile from "../images/profilowe.jpg";
+import I from "../images/ja.jpg";
+import Line from "../images/lina.jpg";
+import Water from "../images/woda.jpg";
+import Ninja from "../images/ninja.jpg";
+import Windsurfing from "../images/windsurfing.jpg";
 import WeekRecipe from "../components/WeekRecipe";
 
 const PageAbout = () => {
@@ -44,6 +44,7 @@ const PageAbout = () => {
         zamiłowanie do gotowania. Chciałabym, pokrótce opowiedzieć Ci o sobie.
       </p>
     </div>
+    
     <div className="col-md-12 about_header">
       <h3>Moje kwalifikacje</h3>
     </div>
@@ -118,11 +119,11 @@ const PageAbout = () => {
     </div>
     <div className="row">
       <div className="col-md-2"></div>
-      <div className="col-md-4 about_header">
-        <h1>Gotowanie</h1>
-      </div>
       <div className="col-md-4 about_photo">
       <img src={I} alt="moje zdjęcie" className="img-fluid" />
+      </div>
+      <div className="col-md-4 about_header">
+        <h1>Gotowanie</h1>
       </div>
       <div className="col-md-2"></div>
     </div>
@@ -147,6 +148,7 @@ const PageAbout = () => {
         pasją jest również gotowanie?
       </p>
     </div>
+    <WeekRecipe />
     <div className="sport_title">
       <div className="row">
         <div className="col-md-2"></div>
@@ -156,12 +158,7 @@ const PageAbout = () => {
         <div className="col-md-4 about_photo">
         <img src={Line} alt="moje zdjęcie na linie" className="img-fluid" />
         </div>
-      </div>
-      <div className="col-md-12 motivation_text">
-        <h3>
-          „Sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień.”
-        </h3>
-        <h3 className="motivation_autor"><i>Robert Collier</i></h3>
+        <div className="col-md-2"></div>
       </div>
     </div>
     <div className="row sport">
@@ -199,8 +196,13 @@ const PageAbout = () => {
       <img src={Ninja} alt="moje zdjęcie" className="img-fluid" />
       </div>
     </div>
+    <div className="col-md-12 motivation_text">
+        <h3>
+          „Sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień.”
+        </h3>
+        <h3 className="motivation_autor"><i>Robert Collier</i></h3>
       </div>
-      <WeekRecipe />
+      </div>
     </Layoyt>
   );
 };

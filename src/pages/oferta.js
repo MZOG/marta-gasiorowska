@@ -6,15 +6,18 @@ import FloatingBoxes from "../components/FloatingBoxes";
 const PageOffer = () => {
   return (
     <Layoyt>
-		<SEO title="Oferta" />	
+      <SEO title="Oferta" />
       <div className="container offer_page">
       <div className="motivation_text">
 				<h2>"Sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień." - <i>Robert Collier</i></h2>
 			</div>
 		<div className="offer_schame">
 			<h1>Zdobądź upragnioną sylwetkę i zdrowe nawyki żywieniowe</h1>
-			<FloatingBoxes />
 		</div>
+		<div className="offer_schame_text">
+			<h4>W ramach konsultacji otrzymasz ode mnie:</h4>
+		</div>
+		<FloatingBoxes />
 		<div className="offer_header">
 			<h2>Indywidualna konsultacja</h2>
 			</div>

@@ -13,7 +13,6 @@ const IndexPage = () => {
       <Cooperation />
       <Contact />
       <WeekRecipe />
-      
     </Layout>
   );
 };

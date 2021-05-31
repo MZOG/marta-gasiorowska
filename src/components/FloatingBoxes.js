@@ -24,7 +24,7 @@ const FloatingBoxes = () => {
                 </div>
             </div>
         </div>
-    )
-}
+  );
+};
 
 export default FloatingBoxes;

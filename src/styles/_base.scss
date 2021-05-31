@@ -4,11 +4,13 @@
 }
 
 html {
-  font-family: aktiv-grotesk, sans-serif;
+  margin-top: 100px;
+}
+
+body {
+  font-family: aktiv-grotesk, sans-serif !important;
   font-weight: 400;
   font-style: normal;
-  height: 2000px;
-  margin-top: 100px;
 }
 
 .container {
@@ -28,6 +30,68 @@ html {
   z-index: 1;
 }
 
+// recipes page
+.all_recipes {
+  &-categories {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: 30px;
+      display: inline-block;
+
+      a {
+        border: 1px solid #eaeaea;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+        color: $green;
+        border-radius: 50px;
+        line-height: 1;
+
+        &:hover {
+          background: $green;
+          color: $white;
+          border-color: $green;
+        }
+      }
+    }
+  }
+}
+
+// single  recipe
+.single_recipe {
+  h1 {
+    font-weight: 700;
+  }
+
+  &-image {
+    border-radius: 20px;
+    box-shadow: rgba(5, 5, 24, 0.14) 0px 0px 20px 0px;
+  }
+
+  &_steps {
+    ul {
+      li {
+        color: red;
+      }
+    }
+  }
+
+  &__calories {
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    margin-top: 40px;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
 // floating boxes
 .floating__boxes {
   background-image: url("../images/linia.svg");
@@ -39,6 +103,12 @@ html {
 
   .padding_top {
     padding-top: 100px;
+    @include mq("phone", "max") {
+      padding: 30px 0;
+    }
+    @include mq("tablet", "max") {
+      padding: 30px 0;
+    }
   }
 
   &-item {
@@ -51,13 +121,19 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     animation: moveBox 4s infinite;
-   
+
     @keyframes moveBox {
-      0% { transform: rotate(0deg) translateX(0px) rotate(0deg); }
-      50%   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
-      100% { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+      0% {
+        transform: rotate(0deg) translateX(0px) rotate(0deg);
+      }
+      50% {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
+      }
+      100% {
+        transform: rotate(0deg) translateX(0px) rotate(0deg);
+      }
     }
 
     p {
@@ -74,7 +150,7 @@ html {
     margin: 50px 0 50px;
     text-align: center;
   }
-  
+
   .contact_type {
     h3 {
       margin-bottom: 35px;
@@ -85,22 +161,25 @@ html {
   .col-md-6 {
     button {
       margin: 0;
-      box-shadow: 0 12px 24px 0 rgba(35,69,182,0.24);
+      box-shadow: 0 12px 24px 0 rgba(35, 69, 182, 0.24);
       margin-top: 25px;
     }
   }
-  
+
   .col-md-2 {
-    display: inline;		
+    display: inline;
   }
-  
+
   .contact_svg {
     margin-bottom: 20px;
+    span {
+      color: blueviolet;
+    }
     svg {
       fill: $basicOrange;
       margin-right: 10px;
     }
-  
+
     span {
       color: black;
       font-weight: bold;
@@ -109,7 +188,7 @@ html {
 
   button {
     margin-top: 25px;
-    box-shadow: 0 12px 24px 0 rgba(35,69,182,0.24);
+    box-shadow: 0 12px 24px 0 rgba(35, 69, 182, 0.24);
   }
 }
 //cooperation component //
@@ -121,46 +200,46 @@ html {
     color: darken($green, 15%);
     text-align: center;
   }
-  
+
   h3 {
     margin: 60px 0 30px 0;
     font-weight: 600;
-  
+
     span {
       display: block;
     }
-  
+
     .highlight {
       display: inline-block;
       color: $green;
-  
+
       &.orange {
         color: orange;
       }
     }
   }
-  
+
   .progress {
     height: 40px;
     margin-bottom: 100px;
   }
-  
+
   svg {
     margin-bottom: 20px;
   }
-  
+
   .dietician {
     margin-top: 75px;
     h2 {
       margin-bottom: 45px;
     }
   }
-  
+
   .dietician-header {
     text-align: center;
     margin-bottom: 50px;
   }
-  
+
   .dietician-text {
     margin-bottom: 50px;
   }
@@ -173,16 +252,16 @@ html {
       width: 30%;
     }
   }
-  
+
   .progress_text {
     text-align: center;
     margin-bottom: 15px;
   }
-  
+
   .cooperation_content {
     text-align: center;
   }
-  
+
   .cooperation_content {
     h2 {
       margin-top: 75px;
@@ -191,31 +270,31 @@ html {
   }
   .box-container {
     text-align: center;
-  
+
     .box {
       padding: 40px;
       color: $white;
       border-radius: 0;
-  
+
       h4 {
         margin-bottom: 20px;
       }
-  
+
       &_one {
         background: #ffa554;
         border-radius: 0;
       }
-  
+
       &_two {
         background: $basicOrange;
         border-radius: 0;
       }
-  
+
       &_three {
         background: #a7d433;
         border-radius: 0;
       }
-  
+
       &_four {
         background: #01b4bd;
       }
@@ -223,7 +302,7 @@ html {
         margin: 20px;
       }
     }
-  
+
     .box_header {
       h4 {
         margin-top: 40px;
@@ -235,7 +314,7 @@ html {
       font-weight: bold;
     }
   }
-  
+
   .row {
     margin-bottom: 30px;
   }
@@ -252,6 +331,19 @@ html {
 		text-align: center;
 		margin-bottom: 50px;
 	}
+
+  .offer_schame {
+    h1 {
+      margin-bottom: 15px;
+      @include mq("phone", "max") {
+        margin-top: 20px;
+      }
+    }
+  }
+  .offer_schame_text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
   
   .consultation_content {
     background: #d3dee0;
@@ -265,41 +357,58 @@ html {
       border-bottom: 1px solid #888;
     }
   }
-  
+
   .consultation_left_box {
     margin-left: 10px;
     background: #f7f7f7;
     padding: 20px;
-  
+    @include mq("phone", "max") {
+      margin: 0 10px;
+    }
   }
-  
+
   .consultation_price {
     h2 {
       margin-top: 25px;
     }
   }
-  
+
   .consultation_text {
     padding-top: 20px;
+    @include mq("phone", "max") {
+      margin: 0 20px;
+    }
+    @include mq("tablet", "max") {
+      margin: 0 20px;
+    }
   }
-  
+
   .motivation_text {
     margin-top: 50px;
-    color: #A7D433;
-  }
-  
-  .offer_header {
-    h2{
-      margin: 75px 0;
+    color: #a7d433;
+    @include mq("phone", "max") {
+      margin-top: 65px;
     }
   }
-  
+
+  .offer_header {
+    h2 {
+      margin: 75px 0;
+      @include mq("phone", "max") {
+        margin: 30px;
+      }
+      @include mq("tablet", "max") {
+        margin: 30px;
+      }
+    }
+  }
+
   .offer_boxes {
     .offer_box_one {
-      background: #A7D433;
+      background: #a7d433;
     }
     .offer_box_two {
-      background: #FFA554;
+      background: #ffa554;
     }
     .offer_box_tree {
       background: $basicOrange;
@@ -308,14 +417,14 @@ html {
       margin-bottom: 50px;
     }
   }
-  
+
   .offer_type_price {
     h4 {
       margin: 0;
       color: white;
     }
   }
-  
+
   .price {
     .price_number {
       font-size: 50px;
@@ -325,55 +434,68 @@ html {
       font-weight: bold;
     }
   }
-  
+
   .offer_list {
     font-size: 20px;
     margin-top: 50px;
+    margin-bottom: 25px;
     p {
       font-weight: bold;
     }
   }
-  
+
   .diets_discription {
     
     background: #d3dee0;
-    border: black solid;
+    border: 1px black solid;
+    border-radius: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 22px;
-    margin-bottom: 75px; 
+    margin-bottom: 75px;
   }
 }
 
 // diet page//
 
 .diet_page {
+
+img {
+  border-radius: 20px;
+}
   .slimming_header {
     margin: 60px 0;
+    text-align: center;
   }
-  
+
   .progress_text {
     margin-top: 75px;
     text-align: center;
   }
-  
+
   .diet_motto {
     margin-top: 50px;
     text-align: center;
   }
-  
+
   .box_one {
     color: white;
     background: $basicOrange;
     text-align: center;
     border-radius: 50px;
-  
+
     p {
       margin: 20px;
     }
-  
+    @include mq("phone", "max") {
+      margin-bottom: 20px;
+    }
+
+    @include mq("tablet", "max") {
+      margin-bottom: 20px;
+    }
   }
-  
+
   .box_two {
     color: white;
     background: $basicOrange;
@@ -383,7 +505,7 @@ html {
       margin: 20px;
     }
   }
-  
+
   .button {
     button {
       margin-top: 30px;
@@ -406,21 +528,21 @@ html {
   .bg-warning {
     width: 30%;
   }
-  
+
   .active {
     margin-top: 75px;
   }
-  
+
   .active_header {
     text-align: left;
     margin: 50px 0;
   }
-  
+
   .active_diet_motto {
     margin-top: 50px;
     text-align: center;
   }
-  
+
   .active-button {
     button {
       border: none;
@@ -434,11 +556,11 @@ html {
       }
     }
   }
-  
+
   .pragnant {
     margin-top: 75px;
   }
-  
+
   .pragnant_header {
     margin: 50px 0;
   }
@@ -448,13 +570,17 @@ html {
       margin-top: 25px;
     }
   }
+
+  .pragnant__text {
+    margin-top: 20px;
+  }
   
   .pragnant_diet_motto {
     margin-top: 50px;
     text-align: center;
     margin-bottom: 100px;
   }
-  
+
   .pragnant_button {
     margin-top: 30px;
     button {
@@ -468,21 +594,32 @@ html {
       }
     }
   }
-  
+
   .training_title {
     h2 {
       margin: 40px;
       text-align: center;
     }
   }
-  
+
   .trening_type {
     h3 {
+      padding-top: 20px;
       text-align: center;
-      color: $basicOrange;
+      color: white
     }
   }
-  
+
+  .trening_type_one {
+    color: white;
+    background: $basicOrange;
+  }
+
+  .trening_type_two {
+    color: white;
+    background: $basicGreen;
+  }
+
   .training_discription {
     margin: 50px 0;
     text-align: center;
@@ -524,34 +661,34 @@ html {
       }
     }
   }
-  
+
   .about_me {
     margin: 75px 0;
   }
-  
+
   .about_list {
     margin-bottom: 75px;
   }
-  
+
   .coocking_discription {
     margin: 75px 0;
   }
-  
+
   .sport_title {
     margin: 75px 0;
   }
-  
+
   .sport_discrtiption {
     margin: auto;
   }
-  
+
   .sport {
     margin-bottom: 75px;
     img {
       width: 100%;
     }
   }
-  
+
   .motivation_text {
     color: $basicGreen;
     margin: 50px 0;
@@ -564,6 +701,9 @@ html {
 
 //Week Recipe//
 
+.weekly_recipe {
+  background: $greenLight;
+  padding: 70px 0;
 
   .weekly_recipe {
     background: $greenLight;
@@ -606,18 +746,9 @@ html {
       border-radius: 15px;
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  
-      h5 {
-        font-weight: 600;
-      }
-  
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
     }
   }
+}
 
   //footer//
 
@@ -726,6 +857,11 @@ html {
   .contact_header {
     margin: 75px 0 50px;
     text-align: center;
+    h2 {
+    @include mq("phone", "max") {
+      margin-top: 66px;
+    }
+  }
   }
   
   button {
