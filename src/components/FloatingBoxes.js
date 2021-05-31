@@ -5,7 +5,7 @@ const FloatingBoxes = () => {
         <div className="floating__boxes row">
             <div className="col-md-3">
                 <div className="floating__boxes-item">
-                    <p>Indywidualny plan treningowy</p>
+                    <p>Indywidualny plan diety/treningowy</p>
                 </div>
             </div>
             <div className="col-md-3 padding_top">

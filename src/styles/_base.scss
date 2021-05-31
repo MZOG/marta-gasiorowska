@@ -409,12 +409,15 @@ body {
   .offer_boxes {
     .offer_box_one {
       background: #a7d433;
+      padding: 20px;
     }
     .offer_box_two {
       background: #ffa554;
+      padding: 20px;
     }
     .offer_box_tree {
       background: $basicOrange;
+      padding: 20px;
     }
     h2 {
       margin-bottom: 50px;
@@ -448,7 +451,7 @@ body {
   }
 
   .diets_discription {
-    
+    padding: 20px 0;
     background: #d3dee0;
     border: 1px black solid;
     border-radius: 20px;
@@ -456,6 +459,9 @@ body {
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 75px;
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -810,8 +816,15 @@ img {
 //Week Recipe//
 
 .weekly_recipe {
-  background: $greenLight;
+  background: #d3dee0;
   padding: 70px 0;
+
+  .container {
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
 
   .weekly_recipe {
     background: $greenLight;
@@ -847,8 +860,8 @@ img {
     }
   
     &-info {
-      background: rgb(194, 230, 106);
-      color: rgb(98, 128, 24);
+      background: gainsboro;
+      color: rgb(0, 0, 0);
       padding: 30px;
       margin-top: 50px;
       border-radius: 15px;
