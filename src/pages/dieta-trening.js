@@ -12,7 +12,7 @@ const PageTrening = () => {
       <SEO title="Dieta & Trening" />
       <div className="container diet_page">
         <div className="row slimming">
-          <div className="col-xl-6 col-md-12 slimming_image">
+          <div className="col-xl-6 col-md-12 slimming_content">
             <div className="slimming_header">
               <h2>DIETA ODCHUDZAJĄCA</h2>
             </div>
@@ -59,7 +59,7 @@ const PageTrening = () => {
             <div
               className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
               role="progressbar"
-              //style="width: 30%"
+              //="width: 30%"
               aria-valuenow="30"
               aria-valuemin="0"
               aria-valuemax="100"
@@ -74,7 +74,7 @@ const PageTrening = () => {
             </h4>
             <h4>NAPISZ DO MNIE I OMÓWIMY SZCZEGÓŁY!</h4>
           </div>
-          <div className="slimming_header">
+          <div className="slimming_header_mid">
             <h2>DODATKOWO ODE MNIE:</h2>
           </div>
           <div className="row">
@@ -95,7 +95,7 @@ const PageTrening = () => {
         <div className="active">
         <div className="row">
           
-          <div className="col-xl-6 col-md-12">
+          <div className="col-xl-6 col-md-12 active_content">
           <div className="active_header">
             <h2>DIETA DLA AKTYWNYCH FIZYCZNIE</h2>
           </div>
@@ -159,14 +159,8 @@ const PageTrening = () => {
         </Link>
         <div className="pragnant">
           <div className="row">
-          <div className="col-xl-6 col-md-12 pragnant_image">
-            <img
-              src={dietPragnant}
-              alt="dla kobiet w ciąży"
-              className="img-fluid"
-            />
-          </div>
-          <div className="col-xl-6 col-md-12">
+          
+          <div className="col-xl-6 col-md-12 pragnant_content">
           <div className="pragnant_header">
             <h2>DIETA DLA KOBIET W CIĄŻY I KARMIĄCYCH</h2>
           </div>
@@ -182,8 +176,15 @@ const PageTrening = () => {
             </p>
             </div>
             </div>
+            <div className="col-xl-6 col-md-12 pragnant_image">
+            <img
+              src={dietPragnant}
+              alt="dla kobiet w ciąży"
+              className="img-fluid"
+            />
+          </div>
             <div className="col-md-12">
-              <p className="pragnant__text">Możliwe powikłania wynikające z nieodpowiedniej bądź żle zbilansowanej diety:</p>
+              <p className="pragnant__text">Możliwe powikłania wynikające z nieodpowiedniej bądź źle zbilansowanej diety:</p>
             <ul>
               <li>poronienia</li>
               <li>poród przedwczesny</li>

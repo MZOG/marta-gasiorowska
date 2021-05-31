@@ -365,6 +365,9 @@ body {
     @include mq("phone", "max") {
       margin: 0 10px;
     }
+    @include mq("tablet", "max") {
+      margin: 0 10px;
+    }
   }
 
   .consultation_price {
@@ -463,9 +466,34 @@ body {
 img {
   border-radius: 20px;
 }
+
+ .slimming_image {
+  margin-top: 30px;
+  @include mq("tablet", "min") {
+    margin-top: 0;
+  }
+ }
   .slimming_header {
     margin: 60px 0;
+    @include mq("phone", "max") {
+      margin-top: 140px;
+    }
+    @include mq("tablet", "min") {
+      margin-top: 100px;
+    }
+    @include mq("tablet", "max") {
+      margin-top: 140px;
+    }
+  }
+
+  .slimming_header_mid {
     text-align: center;
+    margin: 20px 0;
+  }
+
+  .slimming_content {
+    margin-top: -60px;
+    margin-bottom: 0;
   }
 
   .progress_text {
@@ -533,9 +561,17 @@ img {
     margin-top: 75px;
   }
 
+  .active_image {
+    margin-top: 0px;
+  }
+
   .active_header {
     text-align: left;
     margin: 50px 0;
+  }
+
+  .active_content {
+    margin-top: -35px;
   }
 
   .active_diet_motto {
@@ -549,7 +585,8 @@ img {
       height: 50px;
       border-radius: 25px;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin: 25px 0;
+
       &:hover {
         background: $basicOrange;
         color: white;
@@ -561,8 +598,22 @@ img {
     margin-top: 75px;
   }
 
+  .pragnant_image {
+    margin-top: -20px;
+    @include mq("tablet", "min") {
+      margin-top: 0;
+    }
+    @include mq("phone", "min") {
+      margin-top: 0;
+    }
+  }
+
   .pragnant_header {
-    margin: 50px 0;
+    margin: 30px 0;
+  }
+
+  .pragnant_content {
+    margin-top: -35px;
   }
 
   .pragnant_warning {
@@ -630,11 +681,28 @@ img {
 // about_page //
 
 .about_page {
+  img {
+    border-radius: 25px;
+  }
   .about_header {
     margin: auto;
     text-align: center;
+    @include mq("phone", "max") {
+      margin-top: 25px;
+    }
+    @include mq("tablet", "max") {
+      margin-top: 25px;
+    }
+    h1 {
+      @include mq("phone", "max") {
+        margin-bottom: 40px;
+      }
+    }
     h3 {
       margin-bottom: 75px;
+      @include mq("phone", "min") {
+        margin-bottom: 25px;
+      }
     }
   }
   
@@ -663,11 +731,39 @@ img {
   }
 
   .about_me {
-    margin: 75px 0;
+    margin: 50px 0;
+    @include mq("phone", "max") {
+      margin: 25px;
+      margin-top: -30px;
+    }
   }
 
   .about_list {
     margin-bottom: 75px;
+    @include mq("phone", "max") {
+      margin-bottom: 30px;
+    }
+    @include mq("tablet", "max") {
+      margin-bottom: 30px;
+    }
+    h5 {
+      color: $basicGreen;
+    }
+  }
+
+  .about_photo {
+    @include mq("phone", "min") {
+      margin-bottom: 25px;
+    }
+  }
+
+  .trainig_list {
+    h5 {
+      color: $basicOrange;
+    }
+    @include mq("phone", "min") {
+      margin-bottom: 25px;
+    }
   }
 
   .coocking_discription {
@@ -676,6 +772,9 @@ img {
 
   .sport_title {
     margin: 75px 0;
+    @include mq("tablet", "min") {
+      margin: 310 0px;
+    }
   }
 
   .sport_discrtiption {
@@ -684,8 +783,14 @@ img {
 
   .sport {
     margin-bottom: 75px;
+    @include mq("phone", "min") {
+      margin-bottom: 25px;
+    }
     img {
       width: 100%;
+      @include mq("phone", "min") {
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -693,6 +798,9 @@ img {
     color: $basicGreen;
     margin: 50px 0;
     text-align: center;
+    @include mq("phone", "max") {
+      margin-top: 60px;
+    }
     .motivation_autor {
       text-align: right;
     }

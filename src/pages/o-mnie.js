@@ -70,7 +70,7 @@ const PageAbout = () => {
           <li>Suplementacja w sporcie i żywieniu</li>
         </ul>
       </div>
-      <div className="col-md-4">
+      <div className="col-md-4 trainig_list">
         <h5>Trener Personalny:</h5>
         <h6>2020r.</h6>
         <ul>
@@ -125,7 +125,7 @@ const PageAbout = () => {
       <div className="col-md-4 about_header">
         <h1>Gotowanie</h1>
       </div>
-      <div className="col-md-2"></div>
+      <div className="col--2"></div>
     </div>
     <div className="col-md-12 coocking_discription">
       <p>
@@ -187,7 +187,7 @@ const PageAbout = () => {
           odpowiednio dobrana dieta bez wątpienia ułatwia osiągnięcie sukcesów i
           coraz lepszych wyników co sprawia poczucie ogromnej satysfakcji.
           Nieważne czy trenujesz amatorsko czy zawodowo. Każdy organizm wymaga
-          przy ciężkim treningu sporo energii i siły. Tylko dzięki dobrze
+          przy ciężkim treningu sporo energii i siły, które należy mu dostarczyć dobrze zbilansowaną i przemyślaną dietą. Tylko dzięki dobrze
           zbilansowanej diecie przetrwasz mordercze treningi i dasz z siebie
           100%!
         </p>
