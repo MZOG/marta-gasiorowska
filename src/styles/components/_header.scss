@@ -28,18 +28,22 @@
     svg {
       width: 70px;
     }
+
+    a {
+      text-decoration: none;
+      color: $black;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    span {
+      margin-left: 20px;
+      font-size: 20px;
+    }
   }
 
   .header__logo {
     display: flex;
-  }
-
-  .logo_text_header {
-    display: flex;
-    h4  {
-      margin: auto;
-      font-size: 20px;
-    }
   }
 
   &__nav {

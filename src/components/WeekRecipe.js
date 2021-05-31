@@ -5,7 +5,11 @@ import Img from "gatsby-image";
 const WeekRecipe = () => {
   const data = useStaticQuery(graphql`
     {
-      allDatoCmsRecipe(filter: { recipeOfTheWeek: { eq: false } }) {
+      allDatoCmsRecipe(
+        filter: { recipeOfTheWeek: { eq: true } }
+        limit: 1
+        sort: { fields: category___meta___updatedAt, order: DESC }
+      ) {
         edges {
           node {
             url
@@ -23,6 +27,10 @@ const WeekRecipe = () => {
             calories
             carbohydrates
             protein
+            category {
+              name
+              url
+            }
           }
         }
       }
@@ -31,6 +39,8 @@ const WeekRecipe = () => {
 
   const { title, url, recipeSteps, fats, calories, carbohydrates, protein } =
     data.allDatoCmsRecipe.edges[0].node;
+
+  const categoryUrl = data.allDatoCmsRecipe.edges[0].node.category.url;
 
   return (
     <div className="weekly_recipe">
@@ -48,8 +58,11 @@ const WeekRecipe = () => {
           <div className="col-md-8">
             <h3>{title}</h3>
             <h4>Opis przygotowania</h4>
-            <p>{recipeSteps}</p>
-            <Link to={`/przepisy/${url}`} className="btn btn-primary">
+            <div dangerouslySetInnerHTML={{ __html: recipeSteps }}></div>
+            <Link
+              to={`/przepisy/${categoryUrl}/${url}`}
+              className="btn btn-primary"
+            >
               Zobacz przepis
             </Link>
           </div>

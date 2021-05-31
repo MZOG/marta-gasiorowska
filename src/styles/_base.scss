@@ -30,6 +30,44 @@ body {
   z-index: 1;
 }
 
+// hero
+.hero {
+  background: #d3dee0;
+  padding: 50px 0;
+
+  h1 {
+    font-size: 65px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  a {
+    color: darken(#d3dee0, 30%);
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: $white;
+    display: inline-block;
+    font-weight: 600;
+
+    &:hover {
+      background: darken(#d3dee0, 30%);
+      color: $white;
+    }
+  }
+
+  &_image {
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
+
 // recipes page
 .all_recipes {
   &-categories {
@@ -328,13 +366,13 @@ body {
 
 .offer_page {
   h1 {
-		text-align: center;
-		margin: 75px 0;
-	}
-	h2 {
-		text-align: center;
-		margin-bottom: 50px;
-	}
+    text-align: center;
+    margin: 75px 0;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
   .offer_schame {
     h1 {
@@ -348,7 +386,7 @@ body {
     text-align: center;
     margin-bottom: 40px;
   }
-  
+
   .consultation_content {
     background: #d3dee0;
     h1 {
@@ -452,7 +490,6 @@ body {
   }
 
   .diets_discription {
-    
     background: #d3dee0;
     border: 1px black solid;
     border-radius: 20px;
@@ -466,17 +503,16 @@ body {
 // diet page//
 
 .diet_page {
-
-img {
-  border-radius: 20px;
-}
-
- .slimming_image {
-  margin-top: 30px;
-  @include mq("tablet", "min") {
-    margin-top: 0;
+  img {
+    border-radius: 20px;
   }
- }
+
+  .slimming_image {
+    margin-top: 30px;
+    @include mq("tablet", "min") {
+      margin-top: 0;
+    }
+  }
   .slimming_header {
     margin: 60px 0;
     @include mq("phone", "max") {
@@ -629,7 +665,7 @@ img {
   .pragnant__text {
     margin-top: 20px;
   }
-  
+
   .pragnant_diet_motto {
     margin-top: 50px;
     text-align: center;
@@ -661,7 +697,7 @@ img {
     h3 {
       padding-top: 20px;
       text-align: center;
-      color: white
+      color: white;
     }
   }
 
@@ -709,8 +745,7 @@ img {
       }
     }
   }
-  
-  
+
   .about_boxes {
     .about_box_one {
       color: white;
@@ -820,28 +855,28 @@ img {
   .weekly_recipe {
     background: $greenLight;
     padding: 70px 0;
-  
+
     h2 {
       font-weight: 700;
       text-align: center;
       color: $neonGreen;
       margin-bottom: 50px;
     }
-  
+
     h3 {
       font-weight: 700;
       color: rgb(98, 128, 24);
     }
-  
+
     h4 {
       color: rgb(98, 128, 24);
       font-size: 18px;
     }
-  
+
     p {
       color: rgb(98, 128, 24);
     }
-  
+
     &-photo {
       img {
         border-radius: 15px;
@@ -849,7 +884,7 @@ img {
           0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
     }
-  
+
     &-info {
       background: rgb(194, 230, 106);
       color: rgb(98, 128, 24);
@@ -862,128 +897,125 @@ img {
   }
 }
 
-  //footer//
+//footer//
 
-  .footer_color {
+.footer_color {
+  background: #d3dee0;
+  .footer_component {
     background: #d3dee0;
-    .footer_component {
-      background: #d3dee0;
+  }
+}
+
+.footer_left {
+  .footer_logo {
+    svg {
+      margin-top: 15px;
+      width: 70px;
+    }
+    h4 {
+      margin: 0;
+    }
+    h6 {
+      font-size: 12px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 400px) {
+      p {
+        font-size: 16px;
+      }
     }
   }
+}
 
-    .footer_left {
-      .footer_logo {
-        svg {
-          margin-top: 15px;
-          width: 70px;
-        }
-        h4 {
-          margin: 0;
-        }
-        h6 {
-          font-size: 12px;
-        }
-        p {
-          margin-top: 20px;
-          font-size: 22px;
-        }
-    
-        @media screen and (max-width: 400px) {
-          p {
-            font-size: 16px;
-            } 
-        } 
-      }
-    }
-  
-    .footer_middle {
-      
-      margin: 15px 0;
-      display: inline;
-  
-      ul {
-        margin-top: 15px;
-        list-style: none;
-        text-decoration: none;
-        li {
-          padding: 5px;    
-          a {
-            color: black;
-            text-decoration: none;
-                  
-          }
-        }
-      }
-    @media screen and (max-width: 767px) {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin: 0;
-        } 
-    }  
-    @media screen and (max-width: 500px) {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin: 0;
-        font-size: 10px;
-        } 
-    } 
-    @media screen and (max-width: 340px) {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin: 0;
-        font-size: 9px;
-        } 
-    }
-    }
-  
-    .footer_right {	
-      .footer_right_header {
-        margin-top: 15px;
-        text-align: center;
-      }
+.footer_middle {
+  margin: 15px 0;
+  display: inline;
+
+  ul {
+    margin-top: 15px;
+    list-style: none;
+    text-decoration: none;
+    li {
+      padding: 5px;
       a {
-        svg {
-          fill: black;
-          display: grid;
-          margin: 0 auto;
-          margin-bottom: 25px;
-          margin-top: 25px;
-        }
+        color: black;
+        text-decoration: none;
       }
     }
-    @media screen and (max-width: 767px) {
-      .footer_svg {
-        display: flex;
-        justify-content: space-evenly;
-      }
+  }
+  @media screen and (max-width: 767px) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
     }
+  }
+  @media screen and (max-width: 500px) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      font-size: 9px;
+    }
+  }
+}
 
-  //contact component//
-
-  .contact_header {
-    margin: 75px 0 50px;
+.footer_right {
+  .footer_right_header {
+    margin-top: 15px;
     text-align: center;
-    h2 {
+  }
+  a {
+    svg {
+      fill: black;
+      display: grid;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer_svg {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+//contact component//
+
+.contact_header {
+  margin: 75px 0 50px;
+  text-align: center;
+  h2 {
     @include mq("phone", "max") {
       margin-top: 66px;
     }
   }
-  }
-  
-  button {
-      margin-bottom: 75px;
-      box-shadow: 0 12px 24px 0 rgba(35,69,182,0.24);
-  }
+}
 
-  form {
-    .btn {
-      margin: 20px 0;
-    }
-  }
+button {
+  margin-bottom: 75px;
+  box-shadow: 0 12px 24px 0 rgba(35, 69, 182, 0.24);
+}
 
+form {
+  .btn {
+    margin: 20px 0;
+  }
+}
