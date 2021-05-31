@@ -107,13 +107,19 @@ body {
 
   .padding_top {
     padding-top: 100px;
+    @include mq("phone", "max") {
+      padding: 30px 0;
+    }
+    @include mq("tablet", "max") {
+      padding: 30px 0;
+    }
   }
 
   &-item {
     border-radius: 100px;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%);
     border: solid 1px #ebebeb;
-    background: #fff;
+    background: #d3dee0;
     width: 100%;
     height: 60px;
     display: flex;
@@ -170,8 +176,11 @@ body {
 
   .contact_svg {
     margin-bottom: 20px;
+    span {
+      color: blueviolet;
+    }
     svg {
-      fill: #fe8543;
+      fill: $basicOrange;
       margin-right: 10px;
     }
 
@@ -225,6 +234,9 @@ body {
 
   .dietician {
     margin-top: 75px;
+    h2 {
+      margin-bottom: 45px;
+    }
   }
 
   .dietician-header {
@@ -278,7 +290,7 @@ body {
       }
 
       &_two {
-        background: #fe8543;
+        background: $basicOrange;
         border-radius: 0;
       }
 
@@ -316,15 +328,29 @@ body {
 
 .offer_page {
   h1 {
-    text-align: center;
-    margin: 75px 0;
+		text-align: center;
+		margin: 75px 0;
+	}
+	h2 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+  .offer_schame {
+    h1 {
+      margin-bottom: 15px;
+      @include mq("phone", "max") {
+        margin-top: 20px;
+      }
+    }
   }
-  h2 {
+  .offer_schame_text {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
+  
   .consultation_content {
-    background: #e7e7e7;
+    background: #d3dee0;
     h1 {
       margin-bottom: 50px;
       border-bottom: 1px solid #888;
@@ -340,6 +366,12 @@ body {
     margin-left: 10px;
     background: #f7f7f7;
     padding: 20px;
+    @include mq("phone", "max") {
+      margin: 0 10px;
+    }
+    @include mq("tablet", "max") {
+      margin: 0 10px;
+    }
   }
 
   .consultation_price {
@@ -350,16 +382,31 @@ body {
 
   .consultation_text {
     padding-top: 20px;
+    @include mq("phone", "max") {
+      margin: 0 20px;
+    }
+    @include mq("tablet", "max") {
+      margin: 0 20px;
+    }
   }
 
   .motivation_text {
     margin-top: 50px;
     color: #a7d433;
+    @include mq("phone", "max") {
+      margin-top: 65px;
+    }
   }
 
   .offer_header {
     h2 {
       margin: 75px 0;
+      @include mq("phone", "max") {
+        margin: 30px;
+      }
+      @include mq("tablet", "max") {
+        margin: 30px;
+      }
     }
   }
 
@@ -371,7 +418,7 @@ body {
       background: #ffa554;
     }
     .offer_box_tree {
-      background: #fe8543;
+      background: $basicOrange;
     }
     h2 {
       margin-bottom: 50px;
@@ -398,12 +445,17 @@ body {
   .offer_list {
     font-size: 20px;
     margin-top: 50px;
+    margin-bottom: 25px;
     p {
       font-weight: bold;
     }
   }
 
   .diets_discription {
+    
+    background: #d3dee0;
+    border: 1px black solid;
+    border-radius: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 22px;
@@ -414,9 +466,38 @@ body {
 // diet page//
 
 .diet_page {
+
+img {
+  border-radius: 20px;
+}
+
+ .slimming_image {
+  margin-top: 30px;
+  @include mq("tablet", "min") {
+    margin-top: 0;
+  }
+ }
   .slimming_header {
-    text-align: center;
     margin: 60px 0;
+    @include mq("phone", "max") {
+      margin-top: 140px;
+    }
+    @include mq("tablet", "min") {
+      margin-top: 100px;
+    }
+    @include mq("tablet", "max") {
+      margin-top: 140px;
+    }
+  }
+
+  .slimming_header_mid {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .slimming_content {
+    margin-top: -60px;
+    margin-bottom: 0;
   }
 
   .progress_text {
@@ -431,18 +512,25 @@ body {
 
   .box_one {
     color: white;
-    background: #fe8543;
+    background: $basicOrange;
     text-align: center;
     border-radius: 50px;
 
     p {
       margin: 20px;
     }
+    @include mq("phone", "max") {
+      margin-bottom: 20px;
+    }
+
+    @include mq("tablet", "max") {
+      margin-bottom: 20px;
+    }
   }
 
   .box_two {
     color: white;
-    background: #fe8543;
+    background: $basicOrange;
     text-align: center;
     border-radius: 50px;
     p {
@@ -459,7 +547,7 @@ body {
       border-radius: 25px;
       font-weight: bold;
       &:hover {
-        background: #fe8543;
+        background: $basicOrange;
         color: white;
       }
     }
@@ -477,9 +565,17 @@ body {
     margin-top: 75px;
   }
 
+  .active_image {
+    margin-top: 0px;
+  }
+
   .active_header {
-    text-align: center;
+    text-align: left;
     margin: 50px 0;
+  }
+
+  .active_content {
+    margin-top: -35px;
   }
 
   .active_diet_motto {
@@ -493,8 +589,10 @@ body {
       height: 50px;
       border-radius: 25px;
       font-weight: bold;
+      margin: 25px 0;
+
       &:hover {
-        background: #fe8543;
+        background: $basicOrange;
         color: white;
       }
     }
@@ -504,11 +602,34 @@ body {
     margin-top: 75px;
   }
 
-  .pragnant_header {
-    text-align: center;
-    margin: 50px 0;
+  .pragnant_image {
+    margin-top: -20px;
+    @include mq("tablet", "min") {
+      margin-top: 0;
+    }
+    @include mq("phone", "min") {
+      margin-top: 0;
+    }
   }
 
+  .pragnant_header {
+    margin: 30px 0;
+  }
+
+  .pragnant_content {
+    margin-top: -35px;
+  }
+
+  .pragnant_warning {
+    p {
+      margin-top: 25px;
+    }
+  }
+
+  .pragnant__text {
+    margin-top: 20px;
+  }
+  
   .pragnant_diet_motto {
     margin-top: 50px;
     text-align: center;
@@ -523,7 +644,7 @@ body {
       border-radius: 25px;
       font-weight: bold;
       &:hover {
-        background: #fe8543;
+        background: $basicOrange;
         color: white;
       }
     }
@@ -538,9 +659,20 @@ body {
 
   .trening_type {
     h3 {
+      padding-top: 20px;
       text-align: center;
-      color: #fe8543;
+      color: white
     }
+  }
+
+  .trening_type_one {
+    color: white;
+    background: $basicOrange;
+  }
+
+  .trening_type_two {
+    color: white;
+    background: $basicGreen;
   }
 
   .training_discription {
@@ -553,34 +685,89 @@ body {
 // about_page //
 
 .about_page {
+  img {
+    border-radius: 25px;
+  }
   .about_header {
     margin: auto;
     text-align: center;
+    @include mq("phone", "max") {
+      margin-top: 25px;
+    }
+    @include mq("tablet", "max") {
+      margin-top: 25px;
+    }
+    h1 {
+      @include mq("phone", "max") {
+        margin-bottom: 40px;
+      }
+    }
     h3 {
       margin-bottom: 75px;
+      @include mq("phone", "min") {
+        margin-bottom: 25px;
+      }
     }
   }
-
-  .about_photo {
-    margin-top: 50px;
-  }
-
+  
+  
   .about_boxes {
-    margin-top: 75px;
-    .about_box {
+    .about_box_one {
+      color: white;
       margin-bottom: 50px;
+      background: $basicGreen;
       h2 {
+        margin-top: 15px;
         margin-bottom: 25px;
+        text-align: center;
+      }
+    }
+    .about_box_two {
+      color: white;
+      margin-bottom: 50px;
+      background: $basicOrange;
+      h2 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
       }
     }
   }
 
   .about_me {
-    margin: 75px 0;
+    margin: 50px 0;
+    @include mq("phone", "max") {
+      margin: 25px;
+      margin-top: -30px;
+    }
   }
 
   .about_list {
     margin-bottom: 75px;
+    @include mq("phone", "max") {
+      margin-bottom: 30px;
+    }
+    @include mq("tablet", "max") {
+      margin-bottom: 30px;
+    }
+    h5 {
+      color: $basicGreen;
+    }
+  }
+
+  .about_photo {
+    @include mq("phone", "min") {
+      margin-bottom: 25px;
+    }
+  }
+
+  .trainig_list {
+    h5 {
+      color: $basicOrange;
+    }
+    @include mq("phone", "min") {
+      margin-bottom: 25px;
+    }
   }
 
   .coocking_discription {
@@ -589,6 +776,9 @@ body {
 
   .sport_title {
     margin: 75px 0;
+    @include mq("tablet", "min") {
+      margin: 310 0px;
+    }
   }
 
   .sport_discrtiption {
@@ -597,15 +787,24 @@ body {
 
   .sport {
     margin-bottom: 75px;
+    @include mq("phone", "min") {
+      margin-bottom: 25px;
+    }
     img {
       width: 100%;
+      @include mq("phone", "min") {
+        margin-bottom: 40px;
+      }
     }
   }
 
   .motivation_text {
-    color: #a7d433;
+    color: $basicGreen;
     margin: 50px 0;
     text-align: center;
+    @include mq("phone", "max") {
+      margin-top: 60px;
+    }
     .motivation_autor {
       text-align: right;
     }
@@ -618,52 +817,173 @@ body {
   background: $greenLight;
   padding: 70px 0;
 
-  h2 {
-    font-weight: 700;
-    text-align: center;
-    color: #95c125;
-    margin-bottom: 50px;
-  }
-
-  h3 {
-    font-weight: 700;
-    color: rgb(98, 128, 24);
-  }
-
-  h4 {
-    color: rgb(98, 128, 24);
-    font-size: 18px;
-  }
-
-  p {
-    color: rgb(98, 128, 24);
-  }
-
-  &-photo {
-    img {
+  .weekly_recipe {
+    background: $greenLight;
+    padding: 70px 0;
+  
+    h2 {
+      font-weight: 700;
+      text-align: center;
+      color: $neonGreen;
+      margin-bottom: 50px;
+    }
+  
+    h3 {
+      font-weight: 700;
+      color: rgb(98, 128, 24);
+    }
+  
+    h4 {
+      color: rgb(98, 128, 24);
+      font-size: 18px;
+    }
+  
+    p {
+      color: rgb(98, 128, 24);
+    }
+  
+    &-photo {
+      img {
+        border-radius: 15px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+    }
+  
+    &-info {
+      background: rgb(194, 230, 106);
+      color: rgb(98, 128, 24);
+      padding: 30px;
+      margin-top: 50px;
       border-radius: 15px;
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
   }
+}
 
-  &-info {
-    background: rgb(194, 230, 106);
-    color: rgb(98, 128, 24);
-    padding: 30px;
-    margin-top: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  //footer//
 
-    h5 {
-      font-weight: 600;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+  .footer_color {
+    background: #d3dee0;
+    .footer_component {
+      background: #d3dee0;
     }
   }
-}
+
+    .footer_left {
+      .footer_logo {
+        svg {
+          margin-top: 15px;
+          width: 70px;
+        }
+        h4 {
+          margin: 0;
+        }
+        h6 {
+          font-size: 12px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 22px;
+        }
+    
+        @media screen and (max-width: 400px) {
+          p {
+            font-size: 16px;
+            } 
+        } 
+      }
+    }
+  
+    .footer_middle {
+      
+      margin: 15px 0;
+      display: inline;
+  
+      ul {
+        margin-top: 15px;
+        list-style: none;
+        text-decoration: none;
+        li {
+          padding: 5px;    
+          a {
+            color: black;
+            text-decoration: none;
+                  
+          }
+        }
+      }
+    @media screen and (max-width: 767px) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        } 
+    }  
+    @media screen and (max-width: 500px) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        } 
+    } 
+    @media screen and (max-width: 340px) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        font-size: 9px;
+        } 
+    }
+    }
+  
+    .footer_right {	
+      .footer_right_header {
+        margin-top: 15px;
+        text-align: center;
+      }
+      a {
+        svg {
+          fill: black;
+          display: grid;
+          margin: 0 auto;
+          margin-bottom: 25px;
+          margin-top: 25px;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .footer_svg {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+  //contact component//
+
+  .contact_header {
+    margin: 75px 0 50px;
+    text-align: center;
+    h2 {
+    @include mq("phone", "max") {
+      margin-top: 66px;
+    }
+  }
+  }
+  
+  button {
+      margin-bottom: 75px;
+      box-shadow: 0 12px 24px 0 rgba(35,69,182,0.24);
+  }
+
+  form {
+    .btn {
+      margin: 20px 0;
+    }
+  }
+

@@ -30,6 +30,18 @@
     }
   }
 
+  .header__logo {
+    display: flex;
+  }
+
+  .logo_text_header {
+    display: flex;
+    h4  {
+      margin: auto;
+      font-size: 20px;
+    }
+  }
+
   &__nav {
     ul {
       list-style: none;
