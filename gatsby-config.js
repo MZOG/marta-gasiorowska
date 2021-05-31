@@ -32,5 +32,16 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-facebook-customer-chat`,
+      options: {
+        sdk: {
+          appId: "1483414731990202",
+        },
+        chat: {
+          pageId: "your-page-id",
+        },
+      },
+    },
   ],
 };

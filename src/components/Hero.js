@@ -47,7 +47,13 @@ const Hero = () => {
               Sprawdź ofertę
             </Link>
           </div>
-          <div className="col-md-5 hero_image">
+          <div
+            className="col-md-5 hero_image"
+            data-sal="slide-up"
+            data-sal-duration="300"
+            data-sal-delay="600"
+            data-sal-easing="ease"
+          >
             <Img fluid={data.datoCmsAsset.fluid} alt="Marta Gąsiorowska" />
           </div>
         </div>
