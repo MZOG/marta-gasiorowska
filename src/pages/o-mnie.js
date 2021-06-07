@@ -16,9 +16,9 @@ const PageAbout = () => {
       <div className="container about_page">
       <div className="col-md-12 motivation_text">
         <h3>
-          „Nienawidziłem każdej minuty treningu, ale powtarzałem sobie: nie pododawaj się, przecierp teraz i żyj resztę życia jako mistrz.”
+          „Nie musisz być wielkim, żeby zacząć, ale musisz zacząć, żeby być wielkim!.”
         </h3>
-        <h3 className="motivation_autor"><i>Muhammad Ali</i></h3>
+        <h3 className="motivation_autor"><i>Les Brown</i></h3>
       </div>
       <div className="row">
       <div className="col-md-6 about_photo">
@@ -38,7 +38,7 @@ const PageAbout = () => {
         żołądka i dwunastnicy. Jako trener rozpisuje plany treningowe dopasowane do Twoich
         celów i potrzeb. Wciąż poszerzam wiedzę i umiejętności w swojej branży
         poprzez uczestnictwo w kursach i webinarach, aby móc pomóc Ci jak
-        najlepiej. Do tej pory moje jadłospisy pomagały moim bliskim, znajomym i
+        najlepiej. Do tej pory moje jadłospisy pomogły moim bliskim, znajomym i
         innym potrzebującym pomocy w zmianie złych nawyków żywieniowych. Wśród
         tych osób, znalazły się też takie podobne do mnie tzn. odkryły
         zamiłowanie do gotowania. Chciałabym, pokrótce opowiedzieć Ci o sobie.
@@ -66,7 +66,7 @@ const PageAbout = () => {
         <h6>2020r.</h6>
         <ul>
           <li>Podstawa psychodietetyki</li>
-          <li>Rola witamin oraz mikro i makroelementów w życiu człowieka</li>
+          <li>Rola witamin oraz mikro i makroelementów w żywieniu człowieka</li>
           <li>Suplementacja w sporcie i żywieniu</li>
         </ul>
       </div>
@@ -88,7 +88,7 @@ const PageAbout = () => {
               <p>
                 • Układam plany żywienia w odchudzaniu.<br />
                 • Opracowuje jadłospisy dla osób aktywnych fizycznie.<br />
-                • Rozplanowuje diety w konkretnych jednostkach chorobowych tj.
+                • Układam diety w konkretnych jednostkach chorobowych tj.
                 otyłość, nadciśnienie tętnicze, wrzody żołądka i dwunastnicy.<br />
                 • Pomagam zwiększyć motywację w utrzymywaniu diety oraz uczę
                 zmieniać złe nawyki żywieniowe na dobre.
@@ -107,9 +107,9 @@ const PageAbout = () => {
           >
             <div className="wpb_wrapper">
               <p>
-                • Przygotowuje odowiednie plany treningowe dopasowane do Twoich
+                • Przygotowuję odowiednie plany treningowe dopasowane do Twoich
                 celów i potrzeb.<br />
-                • Przekazuje wiedzę na temat prawidłowego podejścia do
+                • Przekazuję wiedzę na temat prawidłowego podejścia do
                 aktywności fizycznej!.
               </p>
             </div>

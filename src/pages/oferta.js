@@ -26,7 +26,7 @@ const PageOffer = () => {
 					<div className="col-md-4 consultation_left">
 						<h1>KONSULTACJA</h1>
 						<div className="consultation_left_box">
-							<h2>CO ZYSKUJESZ</h2>
+							<h2>CO OTRZYMASZ</h2>
 							<p>Uzyskaj odpowiedzi na wątpliwości i wszelkie pytania w trakcie konsultacji e-mailowej.</p>
 						</div>
 						<div className="consultation_price">
@@ -34,7 +34,7 @@ const PageOffer = () => {
 						</div>
 					</div>
 					<div className="col-md-8 consultation_right">
-						<div className="consultation_text"><p><strong>Konsultacja E-mail skierowana jest do osób, które:</strong></p><p>• chcą wprowadzić zdrowy tryb życia, ale nie wiedzą jak to zrobić,</p><p>• interesują się zdrowym stylem życia, czytają dużo książek, artykułów i mają zastrzeżenia,</p><p>• mają wątpliwości związane ze swoją dietą,</p><p>• nie wiedzą czy ich metody żywieniowe są prawidłowe,</p><p>• odczuwają potrzebę objaśnienia konkretnych problemów żywieniowych.</p><p>&nbsp;</p><p><b>Postępowanie krok po kroku:</b></p><p>1. Płacisz za Konsultację</p><p>2. Wysyłasz e-maila z pytaniami i wątpliwościami</p><p>&nbsp;</p></div>
+						<div className="consultation_text"><p><strong>Konsultacja E-mail skierowana jest do osób, które:</strong></p><p>• chcą wprowadzić zdrowy tryb życia, ale nie wiedzą jak to zrobić,</p><p>• interesują się zdrowym stylem życia, czytają dużo książek, artykułów i mają zastrzeżenia,</p><p>• mają wątpliwości związane ze swoją dietą,</p><p>• nie wiedzą czy ich metody żywieniowe są prawidłowe,</p><p>• odczuwają potrzebę objaśnienia konkretnych problemów żywieniowych.</p><p>&nbsp;</p><p><b>Postępowanie krok po kroku:</b></p><p>1. Zapłać za konsultację</p><p>2. Wyślij e-mail z problematycznymi pytaniami</p><p>&nbsp;</p></div>
 					</div>
 				</div>
 			</div>
@@ -141,7 +141,7 @@ const PageOffer = () => {
 							<h4>Plan treningowy</h4>
 						</div>
 						<span className="price">
-							<span className="price_number">60</span>
+							<span className="price_number">50</span>
 							<span className="price_currency">£ / miesiąc</span>
 						</span>
 					</div>
@@ -183,8 +183,8 @@ const PageOffer = () => {
 					<div className="offer_type_price">
 						<h4>Plan treningowy</h4>
 						<span className="price">
-							<span className="price_number">240</span>
-							<span className="price_currency">40 £ / miesiąc</span>
+							<span className="price_number">180</span>
+							<span className="price_currency">30 £ / miesiąc</span>
 						</span>
 					</div>
 					<div className="offer_price">
@@ -207,10 +207,6 @@ const PageOffer = () => {
 							<li>raport co 7 dni</li>
 							<li>stały kontakt przez cały okres diety (messenger lub e-mail)</li>
 						</ul>
-					</div>
-					<div className="diets_discription">
-						<p>UWAGA!</p>
-						<p>Indzwidualne dopasowanie diety na 7 dni (szczegóły diety ustalimy podczas wstępnego wywiadu dietetycznego)</p>
 					</div>
 				</div>
 			</div>

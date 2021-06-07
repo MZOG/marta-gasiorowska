@@ -147,9 +147,10 @@ const PageTrening = () => {
           </div>
           <div className="active_diet_motto">
             <h4>
-              Sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień.
+              "Sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień."
             </h4>
-            <h4>NAPISZ DO MNIE I OMÓWIMY SZCZEGÓŁY!</h4>
+            <h4 className="motivation_autor"><i>Muhammad Ali</i></h4>
+            <h4>CHCESZ WIEDZIEC JAK WYGLĄDA WSPÓŁPRACA? SKONTAKTUJ SIĘ ZE MNĄ!</h4>
           </div>
         </div>
         <Link to="/przepisy/posilki-na-silownie">
@@ -208,7 +209,7 @@ const PageTrening = () => {
           </div>
           <div className="diet_motto">
             <h4>Zadbaj o siebie i swoje dziecko od samego początku.</h4>
-            <h4>NAPISZ DO MNIE I OMÓWIMY SZCZEGÓŁY!</h4>
+            <h4>SKONTAKTUJ SIĘ ZE MNĄ, ABY DOWIEDZIEĆ SIĘ WIĘCEJ!</h4>
           </div>
         </div>
         <Link to="/przepisy/posilki-dla-kobiet-w-ciazy-i-karmiacych">

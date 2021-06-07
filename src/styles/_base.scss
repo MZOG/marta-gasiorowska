@@ -624,7 +624,12 @@ body {
   .active_diet_motto {
     margin-top: 50px;
     text-align: center;
+    .motivation_autor {
+      text-align: right;
+      margin-bottom: 25px;
+    }
   }
+  
 
   .active-button {
     button {
@@ -1032,4 +1037,8 @@ form {
   .btn {
     margin: 20px 0;
   }
+}
+
+footer {
+  margin-top: 50px;
 }
