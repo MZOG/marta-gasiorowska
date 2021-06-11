@@ -17,6 +17,7 @@ const Contact = () => {
                     type="name"
                     className="form-control"
                     id="inputName4"
+                    name="Imie"
                   ></input>
                 </div>
                 <div className="form-group col-md-6">
@@ -25,6 +26,7 @@ const Contact = () => {
                     type="password"
                     className="form-control"
                     id="inputPassword4"
+                    name="Nazwisko"
                   ></input>
                 </div>
               </div>
@@ -34,6 +36,7 @@ const Contact = () => {
                   type="Email"
                   className="form-control"
                   id="inputEmail4"
+                  name="Email"
                 ></input>
               </div>
               <div className="row">
@@ -43,6 +46,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="input"
+                    name="Płeć"
                   ></input>
                 </div>
                 <div className="form-group col-md-1">
@@ -51,6 +55,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="inputAge"
+                    name="Wiek"
                   ></input>
                 </div>
                 <div className="form-group col-md-1">
@@ -59,6 +64,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="input"
+                    name="Wzrost"
                   ></input>
                 </div>
                 <div className="form-group col-md-1">
@@ -67,6 +73,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="input"
+                    name="Waga"
                   ></input>
                 </div>
                 <div className="form-group col-md-7">
@@ -75,6 +82,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="inputAge"
+                    name="Oferta"
                   ></input>
                 </div>
               </div>
@@ -84,6 +92,7 @@ const Contact = () => {
                   className="form-control"
                   rows="7"
                   id="comment"
+                  name="Wiadomość"
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">

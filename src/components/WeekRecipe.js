@@ -8,7 +8,7 @@ const WeekRecipe = () => {
       allDatoCmsRecipe(
         filter: { recipeOfTheWeek: { eq: true } }
         limit: 1
-        sort: { fields: category___meta___updatedAt, order: DESC }
+        sort: { fields: meta___publishedAt, order: DESC }
       ) {
         edges {
           node {

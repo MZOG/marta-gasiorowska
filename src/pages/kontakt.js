@@ -55,7 +55,12 @@ const PageKontakt = () => {
               <div className="row">
                 <div className="form-group col-md-4">
                   <label for="inputName4">Imię</label>
-                  <input type="name" className="form-control" id="inputName4" />
+                  <input
+                    type="name"
+                    className="form-control"
+                    id="inputName4"
+                    name="Imię"
+                  />
                 </div>
                 <div className="form-group col-md-8">
                   <label for="inputRmail4">Email</label>
@@ -63,6 +68,7 @@ const PageKontakt = () => {
                     type="Email"
                     className="form-control"
                     id="inputEmail4"
+                    name="Nazwisko"
                   />
                 </div>
               </div>
@@ -73,6 +79,7 @@ const PageKontakt = () => {
                   className="form-control"
                   rows="7"
                   id="comment"
+                  name="Wiadomość"
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">
@@ -95,6 +102,7 @@ const PageKontakt = () => {
                       type="name"
                       className="form-control"
                       id="inputName4"
+                      name="Imię"
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -103,6 +111,7 @@ const PageKontakt = () => {
                       type="password"
                       className="form-control"
                       id="inputPassword4"
+                      name="Nazwisko"
                     />
                   </div>
                 </div>
@@ -112,28 +121,54 @@ const PageKontakt = () => {
                     type="Email"
                     className="form-control"
                     id="inputEmail4"
+                    name="Email"
                   />
                 </div>
                 <div className="row">
                   <div className="form-group col-md-2">
                     <label for="input">Płeć</label>
-                    <input type="text" className="form-control" id="input" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="input"
+                      name="Płeć"
+                    />
                   </div>
                   <div className="form-group col-md-1">
                     <label for="inputAge">Wiek</label>
-                    <input type="text" className="form-control" id="inputAge" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="inputAge"
+                      name="Wiek"
+                    />
                   </div>
                   <div className="form-group col-md-1">
                     <label for="input">Wzrost</label>
-                    <input type="text" className="form-control" id="input" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="input"
+                      name="Wzrost"
+                    />
                   </div>
                   <div className="form-group col-md-1">
                     <label for="input">Waga</label>
-                    <input type="text" className="form-control" id="input" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="input"
+                      name="Waga"
+                    />
                   </div>
                   <div className="form-group col-md-7">
                     <label for="inputAge">Interesująca Cię oferta</label>
-                    <input type="text" className="form-control" id="inputAge" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="inputAge"
+                      name="Oferta"
+                    />
                   </div>
                 </div>
                 <div className="form-group">
@@ -142,6 +177,7 @@ const PageKontakt = () => {
                     className="form-control"
                     rows="7"
                     id="comment"
+                    name="Wiadomość"
                   ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">
