@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 const RecipePost = ({ data }) => {
   const recipe = data.datoCmsRecipe;
 
-  console.log(recipe);
+  console.log(recipe.ingredient);
 
   return (
     <Layout>
@@ -17,11 +17,8 @@ const RecipePost = ({ data }) => {
         <div className="row">
           <div className="col-md-6">
             <h1>{recipe.title}</h1>
-            <p>Kategoria:</p>
-            <div
-              dangerouslySetInnerHTML={{ __html: recipe.recipeSteps }}
-              className="single_recipe_steps"
-            />
+            <p>Kategoria: {recipe.category.name}</p>
+
             <div className="single_recipe__calories">
               <h2>Wartości odżywcze</h2>
               <p>
@@ -37,6 +34,11 @@ const RecipePost = ({ data }) => {
                 Tłuszcze: <strong>{recipe.fats}</strong>
               </p>
             </div>
+
+            <div
+              dangerouslySetInnerHTML={{ __html: recipe.recipeSteps }}
+              className="single_recipe_steps"
+            />
           </div>
           <div className="col-md-6">
             <Img fluid={recipe.image.fluid} className="single_recipe-image" />
@@ -57,6 +59,12 @@ export const query = graphql`
       calories
       carbohydrates
       protein
+      ingredient {
+        addSkladnik
+      }
+      category {
+        name
+      }
       image {
         fluid {
           ...GatsbyDatoCmsFluid_tracedSVG

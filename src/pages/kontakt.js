@@ -14,11 +14,10 @@ const PageKontakt = () => {
         <div className="row">
           <div className="col-md-6 contact_type">
             <h3>Marta Gąsiorowska</h3>
-            <div className="col-md-12">
-            </div>
+            <div className="col-md-12"></div>
             <div className="col-md-12">
               <div className="contact_svg">
-                <a href="mailto:adres e-mail">
+                <a href="mailto:marta93gasiorowska@wp.pl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -52,7 +51,7 @@ const PageKontakt = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <form>
+            <form name="kontakt" netlify>
               <div className="row">
                 <div className="form-group col-md-4">
                   <label for="inputName4">Imię</label>
@@ -88,7 +87,7 @@ const PageKontakt = () => {
           </div>
           <div className="row">
             <div className="col-md-12 right_side">
-              <form>
+              <form name="Formularz_szczegolowy" netlify>
                 <div className="row">
                   <div className="form-group col-md-6">
                     <label for="inputName4">Imię</label>

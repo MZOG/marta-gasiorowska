@@ -27,6 +27,11 @@ const WeekRecipe = () => {
             calories
             carbohydrates
             protein
+            time
+            difficulty
+            ingredient {
+              addSkladnik
+            }
             category {
               name
               url
@@ -37,10 +42,20 @@ const WeekRecipe = () => {
     }
   `);
 
-  const { title, url, recipeSteps, fats, calories, carbohydrates, protein } =
-    data.allDatoCmsRecipe.edges[0].node;
+  const {
+    title,
+    url,
+    recipeSteps,
+    fats,
+    calories,
+    carbohydrates,
+    protein,
+    time,
+    difficulty,
+  } = data.allDatoCmsRecipe.edges[0].node;
 
   const categoryUrl = data.allDatoCmsRecipe.edges[0].node.category.url;
+  const ingredients = data.allDatoCmsRecipe.edges[0].node.ingredient;
 
   return (
     <div className="weekly_recipe">
@@ -73,13 +88,9 @@ const WeekRecipe = () => {
             <div className="col-md-4">
               <h5>Składniki</h5>
               <ul>
-                <li>Woda gazowana (250ml)</li>
-                <li>Mąka pszenna typu 500 (300g)</li>
-                <li>2 jajka</li>
-                <li>Szczypta soli</li>
-                <li>Odrobina oliwy do podsmażenia</li>
-                <li>Jagody (garść)</li>
-                <li>Truskawki (3 sztuki)</li>
+                {ingredients.map((ingredient) => (
+                  <li>{ingredient.addSkladnik}</li>
+                ))}
               </ul>
             </div>
             <div className="col-md-4">
@@ -92,8 +103,8 @@ const WeekRecipe = () => {
               </ul>
             </div>
             <div className="col-md-4">
-              <h5>Trudność: 3/5</h5>
-              <h5>Czas przygotowania: 45min</h5>
+              <h5>Trudność: {difficulty}/5</h5>
+              <h5>Czas przygotowania: {time} min</h5>
             </div>
           </div>
         </div>
