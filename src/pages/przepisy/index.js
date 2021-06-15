@@ -41,16 +41,16 @@ const PageRecipes = () => {
 
         <ul className="all_recipes-categories">
           <li>
-            <Link to="/przepisy/posilki-na-silownie">Posiłki dla aktywnych fizycznie</Link>
-          </li>
-          <li>
-            <Link to="/przepisy/posilki-odchudzajace">
-              Posiłki na redukcje
+            <Link to="/przepisy/posilki-na-silownie">
+              Posiłki dla aktywnych fizycznie
             </Link>
           </li>
           <li>
+            <Link to="/przepisy/posilki-odchudzajace">Posiłki na redukcje</Link>
+          </li>
+          <li>
             <Link to="/przepisy/posilki-dla-kobiet-w-ciazy-i-karmiacych">
-              Posiłki dla kobiet w ciązy i karmiących piersią
+              Posiłki dla kobiet w ciąży i karmiących piersią
             </Link>
           </li>
         </ul>

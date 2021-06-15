@@ -9,7 +9,11 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-md-12 right_side">
-            <form name="strona_glowna_kontakt" data-netlify="true">
+            <form
+              name="strona_glowna_kontakt"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
               <input
                 type="hidden"
                 name="form-name"

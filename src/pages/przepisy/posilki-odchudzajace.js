@@ -39,7 +39,7 @@ const LossRecipes = () => {
     <Layout>
       <SEO title="Przepisy" />
       <div className="container all_recipes">
-        <h1>Posiłki odchudzajace</h1>
+        <h1>Posiłki odchudzające</h1>
 
         <ul className="all_recipes-categories">
           <li>

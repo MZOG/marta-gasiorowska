@@ -51,7 +51,11 @@ const PageKontakt = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <form name="kontakt" data-netlify="true">
+            <form
+              name="kontakt"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
               <input type="hidden" name="form-name" value="Marta_KontaktMain" />
               <div className="row">
                 <div className="form-group col-md-4">
@@ -95,7 +99,11 @@ const PageKontakt = () => {
           </div>
           <div className="row">
             <div className="col-md-12 right_side">
-              <form name="Formularz_szczegolowy" data-netlify="true">
+              <form
+                name="Formularz_szczegolowy"
+                netlify-honeypot="bot-field"
+                data-netlify="true"
+              >
                 <input
                   type="hidden"
                   name="form-name"

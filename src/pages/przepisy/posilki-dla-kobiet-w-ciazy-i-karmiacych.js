@@ -41,7 +41,7 @@ const PregnentRecipes = () => {
     <Layout>
       <SEO title="Przepisy" />
       <div className="container all_recipes">
-        <h1>Posiłki dla kobiet w ciązy i karmiących</h1>
+        <h1>Posiłki dla kobiet w ciąży i karmiących</h1>
 
         <ul className="all_recipes-categories">
           <li>
