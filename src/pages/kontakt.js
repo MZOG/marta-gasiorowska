@@ -17,7 +17,7 @@ const PageKontakt = () => {
             <div className="col-md-12"></div>
             <div className="col-md-12">
               <div className="contact_svg">
-                <a href="mailto:marta93gasiorowska@wp.pl">
+                <a href="mailto:marta.dietaonline@gmail.com">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -28,7 +28,7 @@ const PageKontakt = () => {
                   >
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
                   </svg>
-                  <span>marta93gasiorowska@wp.pl</span>
+                  <span>marta.dietaonline@gmail.com</span>
                 </a>
               </div>
             </div>
@@ -51,7 +51,8 @@ const PageKontakt = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <form name="kontakt" netlify>
+            <form name="kontakt" data-netlify="true">
+              <input type="hidden" name="form-name" value="Marta_KontaktMain" />
               <div className="row">
                 <div className="form-group col-md-4">
                   <label for="inputName4">Imię</label>
@@ -94,7 +95,12 @@ const PageKontakt = () => {
           </div>
           <div className="row">
             <div className="col-md-12 right_side">
-              <form name="Formularz_szczegolowy" netlify>
+              <form name="Formularz_szczegolowy" data-netlify="true">
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="Marta_Kontakt_Second"
+                />
                 <div className="row">
                   <div className="form-group col-md-6">
                     <label for="inputName4">Imię</label>

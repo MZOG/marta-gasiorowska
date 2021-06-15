@@ -9,7 +9,12 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-md-12 right_side">
-            <form name="strona_glowna_kontakt" netlify>
+            <form name="strona_glowna_kontakt" data-netlify="true">
+              <input
+                type="hidden"
+                name="form-name"
+                value="Marta_Kontakt_Homepage"
+              />
               <div className="row">
                 <div className="form-group col-md-6">
                   <label for="inputName4">Imię</label>

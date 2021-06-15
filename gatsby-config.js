@@ -39,7 +39,7 @@ module.exports = {
           appId: "1483414731990202",
         },
         chat: {
-          pageId: "your-page-id",
+          pageId: "101727995436887",
         },
       },
     },

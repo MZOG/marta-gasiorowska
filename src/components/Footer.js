@@ -91,7 +91,7 @@ const Footer = () => {
                 <h6>SKONTAKTUJ SIĘ</h6>
               </div>
               <div className="footer_svg">
-                <a href="mailto:adres e-mail">
+                <a href="mailto:marta.dietaonline@gmail.com">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
