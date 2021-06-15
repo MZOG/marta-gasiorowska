@@ -19,7 +19,7 @@ const Contact = () => {
                 <div className="form-group col-md-6">
                   <label for="inputName4">Imię</label>
                   <input
-                    type="name"
+                    type="text"
                     className="form-control"
                     id="inputName4"
                     name="Imie"
@@ -28,7 +28,7 @@ const Contact = () => {
                 <div className="form-group col-md-6">
                   <label for="inputPassword4">Nazwisko</label>
                   <input
-                    type="password"
+                    type="text"
                     className="form-control"
                     id="inputPassword4"
                     name="Nazwisko"
@@ -38,7 +38,7 @@ const Contact = () => {
               <div className="form-group">
                 <label for="inputRmail4">Email</label>
                 <input
-                  type="Email"
+                  type="email"
                   className="form-control"
                   id="inputEmail4"
                   name="Email"
