@@ -10,15 +10,11 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-12 right_side">
             <form
-              name="strona_glowna_kontakt"
+              name="KONTAKT HOMEPAGE"
               netlify-honeypot="bot-field"
               data-netlify="true"
             >
-              <input
-                type="hidden"
-                name="form-name"
-                value="Marta_Kontakt_Homepage"
-              />
+              <input type="hidden" name="form-name" value="KONTAKT HOMEPAGE" />
               <div className="row">
                 <div className="form-group col-md-6">
                   <label for="inputName4">Imię</label>
