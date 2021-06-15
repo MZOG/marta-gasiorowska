@@ -43,6 +43,7 @@ const WeekRecipe = () => {
   `);
 
   const {
+    id,
     title,
     url,
     recipeSteps,
@@ -89,7 +90,7 @@ const WeekRecipe = () => {
               <h5>Składniki</h5>
               <ul>
                 {ingredients.map((ingredient) => (
-                  <li>{ingredient.addSkladnik}</li>
+                  <li key={ingredient.addSkladnik}>{ingredient.addSkladnik}</li>
                 ))}
               </ul>
             </div>

@@ -17,7 +17,7 @@ const Contact = () => {
               <input type="hidden" name="form-name" value="KONTAKT HOMEPAGE" />
               <div className="row">
                 <div className="form-group col-md-6">
-                  <label for="inputName4">Imię</label>
+                  <label htmlFor="inputName4">Imię</label>
                   <input
                     type="text"
                     className="form-control"
@@ -26,7 +26,7 @@ const Contact = () => {
                   ></input>
                 </div>
                 <div className="form-group col-md-6">
-                  <label for="inputPassword4">Nazwisko</label>
+                  <label htmlFor="inputPassword4">Nazwisko</label>
                   <input
                     type="text"
                     className="form-control"
@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group">
-                <label for="inputRmail4">Email</label>
+                <label htmlFor="inputRmail4">Email</label>
                 <input
                   type="email"
                   className="form-control"
@@ -46,7 +46,7 @@ const Contact = () => {
               </div>
               <div className="row">
                 <div className="form-group col-md-2">
-                  <label for="input">Płeć</label>
+                  <label htmlFor="input">Płeć</label>
                   <input
                     type="text"
                     className="form-control"
@@ -55,7 +55,7 @@ const Contact = () => {
                   ></input>
                 </div>
                 <div className="form-group col-md-1">
-                  <label for="inputAge">Wiek</label>
+                  <label htmlFor="inputAge">Wiek</label>
                   <input
                     type="text"
                     className="form-control"
@@ -64,7 +64,7 @@ const Contact = () => {
                   ></input>
                 </div>
                 <div className="form-group col-md-1">
-                  <label for="input">Wzrost</label>
+                  <label htmlFor="input">Wzrost</label>
                   <input
                     type="text"
                     className="form-control"
@@ -73,7 +73,7 @@ const Contact = () => {
                   ></input>
                 </div>
                 <div className="form-group col-md-1">
-                  <label for="input">Waga</label>
+                  <label htmlFor="input">Waga</label>
                   <input
                     type="text"
                     className="form-control"
@@ -82,7 +82,7 @@ const Contact = () => {
                   ></input>
                 </div>
                 <div className="form-group col-md-7">
-                  <label for="inputAge">Interesująca Cię oferta</label>
+                  <label htmlFor="inputAge">Interesująca Cię oferta</label>
                   <input
                     type="text"
                     className="form-control"
@@ -92,7 +92,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group">
-                <label for="comment">Wiadomość</label>
+                <label htmlFor="comment">Wiadomość</label>
                 <textarea
                   className="form-control"
                   rows="7"
