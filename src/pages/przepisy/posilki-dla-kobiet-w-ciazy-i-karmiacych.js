@@ -55,7 +55,7 @@ const PregnentRecipes = () => {
               <SingleRecipe
                 name={recipe.node.name}
                 image={recipe.node.image.fluid}
-                description={recipe.node.seo.description}
+                description={recipe.node.seo?.description || null}
                 categoryName={recipe.node.category.name}
                 categoryUrl={recipe.node.category.url}
                 url={recipe.node.url}
