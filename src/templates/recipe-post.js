@@ -10,7 +10,10 @@ const RecipePost = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={recipe.title} description={recipe.seo.description} />
+      <SEO
+        title={recipe.title}
+        description={recipe.seo?.description || false}
+      />
       <div className="container single_recipe">
         <div className="row">
           <div className="col-md-6">
