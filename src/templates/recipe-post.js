@@ -8,11 +8,9 @@ import Layout from "../components/Layout";
 const RecipePost = ({ data }) => {
   const recipe = data.datoCmsRecipe;
 
-  console.log(recipe.ingredient);
-
   return (
     <Layout>
-      <SEO title={recipe.title} />
+      <SEO title={recipe.title} description={recipe.seo.description} />
       <div className="container single_recipe">
         <div className="row">
           <div className="col-md-6">

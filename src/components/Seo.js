@@ -39,7 +39,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
         // },
         {
           property: `og:title`,
-          content: title,
+          content: `${title} - Marta Gąsiorowska`,
         },
         {
           property: `og:description`,
