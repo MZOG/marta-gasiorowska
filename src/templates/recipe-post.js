@@ -36,6 +36,15 @@ const RecipePost = ({ data }) => {
               </p>
             </div>
 
+            <div>
+              <strong>Składniki</strong>
+              <ul>
+                {recipe.ingredient?.map((ingredient) => (
+                  <li key={ingredient.addSkladnik}>{ingredient.addSkladnik}</li>
+                ))}
+              </ul>
+            </div>
+
             <div
               dangerouslySetInnerHTML={{ __html: recipe.recipeSteps }}
               className="single_recipe_steps"
