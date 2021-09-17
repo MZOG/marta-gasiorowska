@@ -34,7 +34,7 @@ const PageKontakt = () => {
             </div>
             <div className="col-md-12">
               <div className="contact_svg">
-                <a href="https://www.facebook.com/messages/t/100003534104788">
+                <a href="https://www.facebook.com/Dietetyk-Online-Marta-G%C4%85siorowska-101727995436887">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
